@@ -56,7 +56,7 @@
     </template>
     <template name="ifstre"
               value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
-              description="StrUtil.equals(str1, str2) {}"
+              description="if(StrUtil.equals(str1, str2)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -78,7 +78,7 @@
     </template>
     <template name="ifstrne"
               value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
-              description="StrUtil.equals(str1, str2) {}"
+              description="if(!StrUtil.equals(str1, str2)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -555,6 +555,13 @@
               description=""
               toReformat="false"
               toShortenFQNames="false">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+
+    <template name="prif" value="private final " description="private final "
+              toReformat="false" toShortenFQNames="false" >
         <context>
             <option name="JAVA" value="true"/>
         </context>
