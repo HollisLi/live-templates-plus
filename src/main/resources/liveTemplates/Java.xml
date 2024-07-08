@@ -705,7 +705,7 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="restController" value="@RestController" description="@RestController"
+    <template name="restc" value="@RestController" description="@RestController"
               toReformat="false" toShortenFQNames="false" >
         <context>
             <option name="JAVA" value="true"/>
@@ -729,7 +729,7 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="valid" value="@Valid " description="@Valid"
+    <template name="valid" value="@Valid" description="@Valid"
               toReformat="false" toShortenFQNames="false" >
         <context>
             <option name="JAVA" value="true"/>
