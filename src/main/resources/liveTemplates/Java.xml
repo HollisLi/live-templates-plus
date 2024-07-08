@@ -1,8 +1,8 @@
 <templateSet group="Java">
     <!-- String Is Blank -->
     <template name="strb"
-              value="StrUtil.isBlank($VAR$)"
-              description="StrUtil.isBlank(String)"
+              value="StringUtils.isBlank($VAR$)"
+              description="StringUtils.isBlank(String)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -11,8 +11,8 @@
         </context>
     </template>
     <template name="ifstrb"
-              value="if (StrUtil.isBlank($VAR$)) {&#10;    $END$&#10;}"
-              description="if (StrUtil.isBlank(String)) {}"
+              value="if (StringUtils.isBlank($VAR$)) {&#10;    $END$&#10;}"
+              description="if (StringUtils.isBlank(String)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -23,8 +23,8 @@
 
     <!-- String Is Not Blank -->
     <template name="strnb"
-              value="StrUtil.isNotBlank($VAR$)"
-              description="StrUtil.isNotBlank(String)"
+              value="StringUtils.isNotBlank($VAR$)"
+              description="StringUtils.isNotBlank(String)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -33,8 +33,8 @@
         </context>
     </template>
     <template name="ifstrnb"
-              value="if (StrUtil.isNotBlank($VAR$)) {&#10;    $END$&#10;}"
-              description="if (StrUtil.isNotBlank(String)) {}"
+              value="if (StringUtils.isNotBlank($VAR$)) {&#10;    $END$&#10;}"
+              description="if (StringUtils.isNotBlank(String)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -45,8 +45,8 @@
 
     <!-- String Is Equals -->
     <template name="stre"
-              value="StrUtil.equals($VAR$, $END$)"
-              description="StrUtil.equals(str1, str2)"
+              value="StringUtils.equals($VAR$, $END$)"
+              description="StringUtils.equals(str1, str2)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -55,8 +55,8 @@
         </context>
     </template>
     <template name="ifstre"
-              value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
-              description="if(StrUtil.equals(str1, str2)) {}"
+              value="if (StringUtils.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
+              description="if(StringUtils.equals(str1, str2)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -67,8 +67,8 @@
 
     <!-- String Is Not Equals -->
     <template name="strne"
-              value="!StrUtil.equals($VAR$, $END$)"
-              description="!StrUtil.equals(str1, str2)"
+              value="!StringUtils.equals($VAR$, $END$)"
+              description="!StringUtils.equals(str1, str2)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -77,8 +77,8 @@
         </context>
     </template>
     <template name="ifstrne"
-              value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
-              description="if(!StrUtil.equals(str1, str2)) {}"
+              value="if (!StringUtils.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
+              description="if(!StringUtils.equals(str1, str2)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -89,8 +89,8 @@
 
     <!-- String Format -->
     <template name="strf"
-              value="StrUtil.format($VAR$, $END$)"
-              description="StrUtil.format()"
+              value="StringUtils.format($VAR$, $END$)"
+              description="StringUtils.format()"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -101,8 +101,8 @@
 
     <!-- List Is Empty -->
     <template name="liste"
-              value="CollectionUtil.isEmpty($VAR$)"
-              description="CollectionUtil.isEmpty(List)"
+              value="CollectionUtils.isEmpty($VAR$)"
+              description="CollectionUtils.isEmpty(List)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
@@ -111,8 +111,8 @@
         </context>
     </template>
     <template name="ifliste"
-              value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isEmpty(List)) {}"
+              value="if (CollectionUtils.isEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (CollectionUtils.isEmpty(List)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
@@ -123,8 +123,8 @@
 
     <!-- List Is Not Empty -->
     <template name="listne"
-              value="CollectionUtil.isNotEmpty($VAR$)"
-              description="CollectionUtil.isNotEmpty(List)"
+              value="CollectionUtils.isNotEmpty($VAR$)"
+              description="CollectionUtils.isNotEmpty(List)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
@@ -133,8 +133,8 @@
         </context>
     </template>
     <template name="iflistne"
-              value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isNotEmpty(List)) {}"
+              value="if (CollectionUtils.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (CollectionUtils.isNotEmpty(List)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
@@ -158,8 +158,8 @@
 
     <!-- Set Is Empty -->
     <template name="sete"
-              value="CollectionUtil.isEmpty($VAR$)"
-              description="CollectionUtil.isEmpty(Set)"
+              value="CollectionUtils.isEmpty($VAR$)"
+              description="CollectionUtils.isEmpty(Set)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
@@ -168,8 +168,8 @@
         </context>
     </template>
     <template name="ifsete"
-              value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isEmpty(Set)) {}"
+              value="if (CollectionUtils.isEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (CollectionUtils.isEmpty(Set)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
@@ -180,8 +180,8 @@
 
     <!-- Set Is Not Empty -->
     <template name="setne"
-              value="CollectionUtil.isNotEmpty($VAR$)"
-              description="CollectionUtil.isNotEmpty(Set)"
+              value="CollectionUtils.isNotEmpty($VAR$)"
+              description="CollectionUtils.isNotEmpty(Set)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
@@ -190,8 +190,8 @@
         </context>
     </template>
     <template name="ifsetne"
-              value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isNotEmpty(Set)) {}"
+              value="if (CollectionUtils.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (CollectionUtils.isNotEmpty(Set)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
@@ -215,8 +215,8 @@
 
     <!-- Array Is Empty -->
     <template name="arre"
-              value="ArrayUtil.isEmpty($VAR$)"
-              description="ArrayUtil.isEmpty(Object[])"
+              value="ArrayUtils.isEmpty($VAR$)"
+              description="ArrayUtils.isEmpty(Object[])"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
@@ -225,8 +225,8 @@
         </context>
     </template>
     <template name="ifarre"
-              value="if (ArrayUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ArrayUtil.isEmpty(Object[])) {}"
+              value="if (ArrayUtils.isEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ArrayUtils.isEmpty(Object[])) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
@@ -237,8 +237,8 @@
 
     <!-- Array Is Not Empty -->
     <template name="arrne"
-              value="ArrayUtil.isNotEmpty($VAR$)"
-              description="ArrayUtil.isNotEmpty(Object[])"
+              value="ArrayUtils.isNotEmpty($VAR$)"
+              description="ArrayUtils.isNotEmpty(Object[])"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
@@ -247,8 +247,8 @@
         </context>
     </template>
     <template name="ifarrne"
-              value="if (ArrayUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ArrayUtil.isNotEmpty(Object[])) {}"
+              value="if (ArrayUtils.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ArrayUtils.isNotEmpty(Object[])) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
@@ -273,8 +273,8 @@
 
     <!-- Map Is Empty -->
     <template name="mape"
-              value="MapUtil.isEmpty($VAR$)"
-              description="MapUtil.isEmpty(Map)"
+              value="MapUtils.isEmpty($VAR$)"
+              description="MapUtils.isEmpty(Map)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
@@ -283,8 +283,8 @@
         </context>
     </template>
     <template name="ifmape"
-              value="if (MapUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (MapUtil.isEmpty(Map)) {}"
+              value="if (MapUtils.isEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (MapUtils.isEmpty(Map)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
@@ -295,8 +295,8 @@
 
     <!-- Map Is Not Empty -->
     <template name="mapne"
-              value="MapUtil.isNotEmpty($VAR$)"
-              description="MapUtil.isNotEmpty(Map)"
+              value="MapUtils.isNotEmpty($VAR$)"
+              description="MapUtils.isNotEmpty(Map)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
@@ -305,8 +305,8 @@
         </context>
     </template>
     <template name="ifmapne"
-              value="if (MapUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (MapUtil.isNotEmpty(Map)) {}"
+              value="if (MapUtils.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (MapUtils.isNotEmpty(Map)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
@@ -331,8 +331,8 @@
 
     <!-- Object Is Null -->
     <template name="obn"
-              value="ObjectUtil.isNull($VAR$)"
-              description="ObjectUtil.isNull(Object)"
+              value="ObjectUtils.isNull($VAR$)"
+              description="ObjectUtils.isNull(Object)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
@@ -341,8 +341,8 @@
         </context>
     </template>
     <template name="ifobn"
-              value="if (ObjectUtil.isNull($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ObjectUtil.isNull(Object)) {}"
+              value="if (ObjectUtils.isNull($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ObjectUtils.isNull(Object)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
@@ -353,8 +353,8 @@
 
     <!-- Object Is Not Null -->
     <template name="obnn"
-              value="ObjectUtil.isNotNull($VAR$)"
-              description="ObjectUtil.isNotNull(Object)"
+              value="ObjectUtils.isNotNull($VAR$)"
+              description="ObjectUtils.isNotNull(Object)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
@@ -363,8 +363,8 @@
         </context>
     </template>
     <template name="ifobnn"
-              value="if (ObjectUtil.isNotNull($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ObjectUtil.isNotNull(Object)) {}"
+              value="if (ObjectUtils.isNotNull($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ObjectUtils.isNotNull(Object)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
@@ -374,48 +374,48 @@
     </template>
 
     <!-- File Exist -->
-    <template name="fileexist"
-              value="FileUtil.exist($VAR$)"
-              description="FileUtil.exist(File||String)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
-    <template name="iffileexist"
-              value="if (FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
-              description="if (FileUtil.exist(File||String)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
+<!--    <template name="fileexist"-->
+<!--              value="FileUtil.exist($VAR$)"-->
+<!--              description="FileUtil.exist(File||String)"-->
+<!--              toReformat="false"-->
+<!--              toShortenFQNames="false">-->
+<!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
+<!--        <context>-->
+<!--            <option name="JAVA" value="true"/>-->
+<!--        </context>-->
+<!--    </template>-->
+<!--    <template name="iffileexist"-->
+<!--              value="if (FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"-->
+<!--              description="if (FileUtil.exist(File||String)) {}"-->
+<!--              toReformat="false"-->
+<!--              toShortenFQNames="false">-->
+<!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
+<!--        <context>-->
+<!--            <option name="JAVA" value="true"/>-->
+<!--        </context>-->
+<!--    </template>-->
 
     <!-- File Not Exist -->
-    <template name="filenexist"
-              value="!FileUtil.exist($VAR$)"
-              description="!FileUtil.exist(File||String)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
-    <template name="iffilenexist"
-              value="if (!FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
-              description="if (!FileUtil.exist(File||String)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
+<!--    <template name="filenexist"-->
+<!--              value="!FileUtil.exist($VAR$)"-->
+<!--              description="!FileUtil.exist(File||String)"-->
+<!--              toReformat="false"-->
+<!--              toShortenFQNames="false">-->
+<!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
+<!--        <context>-->
+<!--            <option name="JAVA" value="true"/>-->
+<!--        </context>-->
+<!--    </template>-->
+<!--    <template name="iffilenexist"-->
+<!--              value="if (!FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"-->
+<!--              description="if (!FileUtil.exist(File||String)) {}"-->
+<!--              toReformat="false"-->
+<!--              toShortenFQNames="false">-->
+<!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
+<!--        <context>-->
+<!--            <option name="JAVA" value="true"/>-->
+<!--        </context>-->
+<!--    </template>-->
 
     <!-- BigDecimal Zero-->
     <template name="deczero"
@@ -440,16 +440,16 @@
     </template>
 
     <!-- Parse JsonStr -->
-    <template name="tojsonstr"
-              value="JSONUtil.toJsonStr($VAR$)"
-              description="JSONUtil.toJsonStr(var)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
+<!--    <template name="tojsonstr"-->
+<!--              value="JSONUtil.toJsonStr($VAR$)"-->
+<!--              description="JSONUtil.toJsonStr(var)"-->
+<!--              toReformat="false"-->
+<!--              toShortenFQNames="false">-->
+<!--        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>-->
+<!--        <context>-->
+<!--            <option name="JAVA" value="true"/>-->
+<!--        </context>-->
+<!--    </template>-->
 
     <!-- new Date -->
     <template name="newdate"
