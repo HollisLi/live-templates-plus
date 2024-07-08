@@ -89,8 +89,8 @@
 
     <!-- String Format -->
     <template name="strf"
-              value="StringUtils.format($VAR$, $END$)"
-              description="StringUtils.format()"
+              value="String.format($VAR$, $END$)"
+              description="String.format(str, args...)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
@@ -260,7 +260,7 @@
     <!-- Array Init -->
     <template name="newarr"
               value="$VAR1$[] $VAR2$ = new $VAR1$[]{$VAR3$};"
-              description="Object[] array = new Object[]{var1, var2, var3}"
+              description="Object[] array = new Object[]{var1, var2...}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true"/>
@@ -651,8 +651,7 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="false" toShortenFQNames="false"
-              >
+    <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
@@ -705,7 +704,7 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="restController" value="@RestController" description="@RestController"
+    <template name="restc" value="@RestController" description="@RestController"
               toReformat="false" toShortenFQNames="false" >
         <context>
             <option name="JAVA" value="true"/>
@@ -729,7 +728,7 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="valid" value="@Valid " description="@Valid"
+    <template name="valid" value="@Valid" description="@Valid"
               toReformat="false" toShortenFQNames="false" >
         <context>
             <option name="JAVA" value="true"/>
