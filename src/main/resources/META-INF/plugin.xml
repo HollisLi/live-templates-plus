@@ -6,12 +6,13 @@
     <name>Live Templates Plus(Hutool)</name>
 
     <!-- 插件开发人员，这里写一下开发者的个人信息. -->
-    <vendor>hollis</vendor>
+    <vendor url="https://www.wolai.com/haozhe/oMDRF7Rn6j4kVpgt8H8N9j">Hollis</vendor>
 
     <!--  插件描述，这里一般是写插件的功能介绍啥的 -->
     <description><![CDATA[
-        Live Templates Plus(Hutool) is a plugin for IntelliJ IDEA,
-        which provides live templates for Hutool.
+        - A live template extension for the cn.hutool tool belt that enhances your coding experience.
+          Please ensure that your project has incorporated the relevant cn.hutool dependency packages before using this plugin.
+        - 基于 cn.hutool 工具包的 live template 增强插件, 使用本插件时, 请保证您的项目已引入 cn.hutool 相关依赖包
     ]]></description>
 
     <!--  插件依赖，这里我们默认引用idea自带的依赖即可  -->
