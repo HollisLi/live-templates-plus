@@ -581,6 +581,12 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
+    <template name="resource" value="@Resource" description="@Resource"
+              toReformat="false" toShortenFQNames="false" >
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
     <template name="builder" value="@Builder" description="@Builder"
               toReformat="false" toShortenFQNames="false" >
         <context>

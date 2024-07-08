@@ -5,10 +5,8 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/com.github.hollis.live.templates.plus.apache.commons)
 
 <!-- Plugin description -->
-- A live template plugin that enhances the functionality of the org.apache.commons-lang3 and commons-collections4 toolkits.
+A live template plugin that enhances the functionality of the org.apache.commons-lang3 and commons-collections4 toolkits.
 Please ensure that your project has already incorporated both the org.apache.commons.commons-lang3 and org.apache.commons.commons-collections4 libraries when using this plugin.
-- 基于 org.apache 的 commons-lang3 和commons-collections4 工具包的 live template 增强插件
-使用本插件时, 请保证您的项目已引入  org.apache.commons.commons-lang3 和 org.apache.commons.commons-collections4 两个工具包
 <!-- Plugin description end -->
 
 ## Installation
