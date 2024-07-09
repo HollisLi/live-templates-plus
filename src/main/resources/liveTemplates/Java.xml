@@ -476,8 +476,8 @@
 
     <!-- Log Info -->
     <template name="logi"
-              value="log.info($FILE_NAME$#$FUNCTION_NAME$ $VAR$: {}, $VAR_VAL$);"
-              description="log.info{ClassName#FunctionName $VAR$: $VAR_VAL$}"
+              value="log.info(&quot;$FILE_NAME$#$FUNCTION_NAME$ $VAR$: {}&quot;, $VAR_VAL$);"
+              description="log.info(&quot;ClassName#FunctionName var: {}&quot;, var)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
@@ -491,8 +491,8 @@
 
     <!-- Log Warn -->
     <template name="logw"
-              value="log.warn($FILE_NAME$#$FUNCTION_NAME$ $VAR$: {}, $VAR_VAL$);"
-              description="log.warn{ClassName#FunctionName $VAR$: $VAR_VAL$}"
+              value="log.warn(&quot;$FILE_NAME$#$FUNCTION_NAME$ $VAR$: {}&quot;, $VAR_VAL$);"
+              description="log.warn(&quot;ClassName#FunctionName var: {}&quot;, var)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
@@ -506,8 +506,8 @@
 
     <!-- Log Error -->
     <template name="loge"
-              value="log.error($FILE_NAME$#$FUNCTION_NAME$ Error, functionParam: {}, errorMessage: {}, $VAR$, e.getMessage(), e);"
-              description="log.error{ClassName#FunctionName $VAR$: $VAR_VAL}"
+              value="log.error(&quot;$FILE_NAME$#$FUNCTION_NAME$ Error, functionParam: {}, errorMessage: {}&quot;, $VAR$, e.getMessage(), e);"
+              description="log.error(&quot;ClassName#FunctionName Error, functionParam:{}, errorMessage: {}&quot;, var, e.getMessage(), e);"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
@@ -521,7 +521,7 @@
     <!-- Throw RuntimeException -->
     <template name="thrr"
               value="throw new RuntimeException(&quot;$END$&quot;);"
-              description="throw new RuntimeException()"
+              description="throw new RuntimeException(&quot;&quot;)"
               toReformat="false"
               toShortenFQNames="false">
         <context>
@@ -561,7 +561,7 @@
     </template>
 
     <template name="prif" value="private final " description="private final "
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
@@ -569,74 +569,74 @@
 
 
     <!-- =============================================== Annotation =============================================== -->
-    <template name="allarg" value="@AllArgsConstructor" description="@AllArgsConstructor"
-              toReformat="false" toShortenFQNames="false" >
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
     <template name="auto" value="@Autowired" description="@Autowired"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="resource" value="@Resource" description="@Resource"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="builder" value="@Builder" description="@Builder"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="clean" value="@Cleanup " description="@Cleanup"
-              toReformat="false" toShortenFQNames="false" >
+    <template name="clean" value="@Cleanup " description="@Cleanup "
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="data" value="@Data" description="@Data"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="tostring" value="@ToString" description="@ToString"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="getm" value="@GetMapping(&quot;/$END$&quot;)" description="@GetMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="postm" value="@PostMapping(&quot;/$END$&quot;)" description="@PostMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="putm" value="@PutMapping(&quot;/$END$&quot;)" description="@PutMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="delm" value="@DeleteMapping(&quot;/$END$&quot;)" description="@DeleteMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="enumv" value="@EnumValue" description="@EnumValue"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="getter" value="@Getter" description="@Getter"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
@@ -644,7 +644,7 @@
     <template name="jsonfor"
               value="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
               description="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
@@ -652,91 +652,103 @@
     <template name="datefor"
               value="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="false" toShortenFQNames="false"
-              >
+    <template name="slfj" value="@Slf4j" description="@Slf4j"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="logfj" value="@Log4j2" description="@Log4j2"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="allarg" value="@AllArgsConstructor" description="@AllArgsConstructor"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="noarg" value="@NoArgsConstructor" description="@NoArgsConstructor"
-              toReformat="false" toShortenFQNames="false" >
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
-    <template name="notb" value="@NotBlank" description="@NotBlank"
-              toReformat="false" toShortenFQNames="false" >
-        <context>
-            <option name="JAVA" value="true"/>
-        </context>
-    </template>
-    <template name="notn" value="@NotNull" description="@NotNull"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="reqarg" value="@RequiredArgsConstructor" description="@RequiredArgsConstructor"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="reqb" value="@RequestBody" description="@RequestBody"
-              toReformat="false" toShortenFQNames="false" >
+    <template name="reqb" value="@RequestBody " description="@RequestBody "
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="reqm" value="@RequestMapping(&quot;/$END$&quot;)" description="@RequestMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="reqp" value="@RequestParam(&quot;id&quot;) " description="@RequestParam(&quot;id&quot;)"
-              toReformat="false" toShortenFQNames="false" >
+    <template name="reqp" value="@RequestParam(&quot;$END$&quot;) " description="@RequestParam(&quot;&quot;)"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="restc" value="@RestController" description="@RestController"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
     <template name="service" value="@Service" description="@Service"
-              toReformat="false" toShortenFQNames="false" >
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="size" value="@Size" description="@Size"
-              toReformat="false" toShortenFQNames="false" >
+    <template name="notb" value="@NotBlank(message = &quot;$END$&quot;)" description="@NotBlank(message = &quot;&quot;)"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="tostring" value="@ToString" description="@ToString"
-              toReformat="false" toShortenFQNames="false" >
+    <template name="notn" value="@NotNull(message = &quot;$END$&quot;)" description="@NotNull(message = &quot;&quot;)"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="valid" value="@Valid" description="@Valid"
-              toReformat="false" toShortenFQNames="false" >
+    <template name="size" value="@Size($END$)" description="@Size()"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="length" value="@Length($END$)" description="@Length()"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="valid" value="@Valid " description="@Valid "
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="validated" value="@Validated" description="@Validated"
+              toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
