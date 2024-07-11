@@ -1,6 +1,7 @@
 # live-templates-plus
 
-![Build](https://github.com/HollisLi/live-templates-plus-hutool/workflows/Build/badge.svg)
+> An enhanced version of Idea live templates, with more popular templates, and support for the Hutool and Apache-Commons toolkits.<br/>
+  Idea live templates 的增强版, 加入了更多常用的模板, 以及对 Hutool 和 Apache-Commons 工具包的支持.
 
 ## Live Templates Plus(Apache-Commons)
 
@@ -23,7 +24,7 @@
 
 ## Live Templates Example | 模板示例
 > For more Example, please refer to the help document <br/>
-更多示例详情, 请看帮助文档
+> 更多示例详情, 请看帮助文档
 
 ### String
 
