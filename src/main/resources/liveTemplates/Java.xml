@@ -760,13 +760,13 @@
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="notn" value="@NotNull(&quot;$END$&quot;)" description="@NotNull(&quot;&quot;)"
+    <template name="notn" value="@NotNull(message = &quot;$END$&quot;)" description="@NotNull(message = &quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
         </context>
     </template>
-    <template name="notb" value="@NotBlank(&quot;$END$&quot;)" description="@NotBlank(&quot;&quot;)"
+    <template name="notb" value="@NotBlank(message = &quot;$END$&quot;)" description="@NotBlank(message = &quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA" value="true"/>
