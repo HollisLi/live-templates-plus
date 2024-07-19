@@ -7,7 +7,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifstrb"
@@ -17,7 +17,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -29,7 +29,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifstrnb"
@@ -39,7 +39,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -51,7 +51,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifstre"
@@ -61,7 +61,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -73,7 +73,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifstrne"
@@ -83,7 +83,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -95,7 +95,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -107,7 +107,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifliste"
@@ -117,7 +117,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -129,7 +129,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="iflistne"
@@ -139,20 +139,29 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- List Init -->
     <template name="newlist"
               value="List&lt;$VAR1$&gt; $VAR2$ = new ArrayList&lt;&gt;();"
-              description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
+              description="List&lt;?&gt; list = new ArrayList&lt;&gt;();"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="newliste"
+              value="Collections.emptyList();"
+              description="Collections.emptyList();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true" />
         </context>
     </template>
 
@@ -164,7 +173,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifsete"
@@ -174,7 +183,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -186,7 +195,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifsetne"
@@ -196,7 +205,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -209,7 +218,16 @@
         <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="newsete"
+              value="Collections.emptySet();"
+              description="Collections.emptySet();"
+              toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="JAVA_CODE" value="true" />
         </context>
     </template>
 
@@ -221,7 +239,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifarre"
@@ -231,7 +249,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -243,7 +261,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifarrne"
@@ -253,21 +271,21 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Array Init -->
     <template name="newarr"
               value="$VAR1$[] $VAR2$ = new $VAR1$[]{$VAR3$};"
-              description="Object[] array = new Object[]{var1, var2...}"
+              description="Object[] array = new Object[]{var1, var2...};"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -279,7 +297,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifmape"
@@ -289,7 +307,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -301,7 +319,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifmapne"
@@ -311,7 +329,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -325,51 +343,51 @@
         <variable name="VAR1" expression="className()" defaultValue="String" alwaysStopAt="true"/>
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Object Is Null -->
     <template name="obn"
-              value="ObjectUtils.isNull($VAR$)"
-              description="ObjectUtils.isNull(Object)"
+              value="Objects.isNull($VAR$)"
+              description="Objects.isNull(Object)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifobn"
-              value="if (ObjectUtils.isNull($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ObjectUtils.isNull(Object)) {}"
+              value="if (Objects.isNull($VAR$)) {&#10;    $END$&#10;}"
+              description="if (Objects.isNull(Object)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Object Is Not Null -->
     <template name="obnn"
-              value="ObjectUtils.isNotNull($VAR$)"
-              description="ObjectUtils.isNotNull(Object)"
+              value="Objects.isNotNull($VAR$)"
+              description="Objects.isNotNull(Object)"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifobnn"
-              value="if (ObjectUtils.isNotNull($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ObjectUtils.isNotNull(Object)) {}"
+              value="if (Objects.isNotNull($VAR$)) {&#10;    $END$&#10;}"
+              description="if (Objects.isNotNull(Object)) {}"
               toReformat="false"
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -424,7 +442,7 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -435,7 +453,7 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -458,7 +476,7 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -485,7 +503,7 @@
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR_VAL" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -500,7 +518,7 @@
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR_VAL" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -514,7 +532,7 @@
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -525,7 +543,7 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -536,7 +554,7 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="thrbb"
@@ -545,7 +563,7 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="false"/>
+            <option name="JAVA_CODE" value="false"/>
         </context>
     </template>
 
@@ -573,13 +591,13 @@
 
     <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="logfj" value="@Log4j2" description="@Log4j2"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -587,19 +605,19 @@
     <template name="restc" value="@RestController" description="@RestController"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="service" value="@Service" description="@Service"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="mapper" value="@Mapper" description="@Mapper"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -607,13 +625,13 @@
     <template name="auto" value="@Autowired" description="@Autowired"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="resource" value="@Resource" description="@Resource"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -621,31 +639,31 @@
     <template name="reqm" value="@RequestMapping(&quot;/$END$&quot;)" description="@RequestMapping(&quot;/&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="getm" value="@GetMapping(&quot;/$END$&quot;)" description="@GetMapping(&quot;/&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="postm" value="@PostMapping(&quot;/$END$&quot;)" description="@PostMapping(&quot;/&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="putm" value="@PutMapping(&quot;/$END$&quot;)" description="@PutMapping(&quot;/&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="delm" value="@DeleteMapping(&quot;/$END$&quot;)" description="@DeleteMapping(&quot;/&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -653,13 +671,13 @@
     <template name="reqp" value="@RequestParam(&quot;$END$&quot;) " description="@RequestParam(&quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="reqb" value="@RequestBody " description="@RequestBody "
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -667,19 +685,19 @@
     <template name="allarg" value="@AllArgsConstructor" description="@AllArgsConstructor"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="noarg" value="@NoArgsConstructor" description="@NoArgsConstructor"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="reqarg" value="@RequiredArgsConstructor" description="@RequiredArgsConstructor"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -687,31 +705,31 @@
     <template name="data" value="@Data" description="@Data"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="builder" value="@Builder" description="@Builder"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="getter" value="@Getter" description="@Getter"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="setter" value="@Setter" description="@Setter"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="tostring" value="@ToString" description="@ToString"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -719,13 +737,13 @@
     <template name="enumv" value="@EnumValue" description="@EnumValue"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="clean" value="@Cleanup " description="@Cleanup "
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -735,7 +753,7 @@
               description="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="datefor"
@@ -743,7 +761,7 @@
               description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
@@ -751,37 +769,43 @@
     <template name="validated" value="@Validated" description="@Validated"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="valid" value="@Valid " description="@Valid "
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="notn" value="@NotNull(message = &quot;$END$&quot;)" description="@NotNull(message = &quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="notb" value="@NotBlank(message = &quot;$END$&quot;)" description="@NotBlank(message = &quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="size" value="@Size(&quot;$END$&quot;)" description="@Size(&quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="length" value="@Length(&quot;$END$&quot;)" description="@Length(&quot;&quot;)"
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+    <template name="param" value="@Param(&quot;$END$&quot;)" description="@Param(&quot;&quot;)"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 </templateSet>
