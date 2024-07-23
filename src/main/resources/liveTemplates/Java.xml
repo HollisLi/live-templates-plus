@@ -608,6 +608,12 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
+    <template name="comp" value="@Component" description="@Component"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
     <template name="service" value="@Service" description="@Service"
               toReformat="false" toShortenFQNames="false">
         <context>
