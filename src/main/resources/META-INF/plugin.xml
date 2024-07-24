@@ -12,7 +12,7 @@
     <description><![CDATA[
         - A live template extension for the cn.hutool tool belt that enhances your coding experience.
           Please ensure that your project has incorporated the relevant cn.hutool dependency packages before using this plugin.
-        - 基于 cn.hutool 工具包的 live template 增强插件, 使用本插件时, 请保证您的项目已引入 cn.hutool 相关依赖包
+        - 基于 cn.hutool 工具包的 live template(实时模板) 增强插件, 使用本插件时, 请保证您的项目已引入 cn.hutool 相关依赖包
     ]]></description>
 
     <!--  插件依赖，这里我们默认引用idea自带的依赖即可  -->
