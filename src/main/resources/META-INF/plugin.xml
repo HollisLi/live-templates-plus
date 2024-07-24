@@ -1,17 +1,23 @@
 <idea-plugin>
     <!-- 插件id，不可重复，必须唯一。插件的升级后续也是依赖插件id来进行识别的 -->
-    <id>com.github.hollis.live.templates.plus.hutool</id>
+    <id>com.github.hollis.live.templates.plus.apache.commons</id>
 
     <!--  插件名称 -->
-    <name>Live Templates Plus(Hutool)</name>
+    <name>Live Templates Plus(Apache-Commons)</name>
 
     <!-- 插件开发人员，这里写一下开发者的个人信息. -->
-    <vendor>hollis</vendor>
+    <vendor url="https://www.wolai.com/haozhe/oMDRF7Rn6j4kVpgt8H8N9j">Hollis</vendor>
 
     <!--  插件描述，这里一般是写插件的功能介绍啥的 -->
     <description><![CDATA[
-        Live Templates Plus(Hutool) is a plugin for IntelliJ IDEA,
-        which provides live templates for Hutool.
+        IDEA Live Templates Plus For Java.
+            A live template enhancement plugin based on the org.apache.commons-lang3 and org.apache.commons-collections4 toolkits.
+          Please ensure that your project has already incorporated both the org.apache.commons.commons-lang3
+          and org.apache.commons.commons-collections4 libraries before using this plugin.
+        Java 版 IDEA 实时模板增强
+            基于 org.apache 的 commons-lang3 和 commons-collections4 工具包的实时模板增强插件
+          使用本插件前, 请保证您的项目已引入  org.apache.commons.commons-lang3
+          和 org.apache.commons.commons-collections4 两个工具包
     ]]></description>
 
     <!--  插件依赖，这里我们默认引用idea自带的依赖即可  -->

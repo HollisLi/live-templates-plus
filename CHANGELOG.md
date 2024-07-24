@@ -4,4 +4,12 @@
 
 ## [Unreleased]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- param -> @Param("")
+- newliste -> Collections.emptyList();
+- newsete -> Collections.emptySet();
+### Optimize
+- notn -> @NotNull(message = "")
+- notb -> @NotBlank(message = "")
+- Optimize the live template prompt range
+### More
+-  Please See [Help Document](https://www.wolai.com/haozhe/oMDRF7Rn6j4kVpgt8H8N9j)
