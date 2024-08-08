@@ -99,6 +99,50 @@
         </context>
     </template>
 
+    <!-- Collection Is Empty -->
+    <template name="cole"
+              value="CollectionUtils.isEmpty($VAR$)"
+              description="CollectionUtils.isEmpty(Collection)"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="ifcole"
+              value="if (CollectionUtils.isEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (CollectionUtils.isEmpty(Collection)) {}"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+
+    <!-- List Is Not Empty -->
+    <template name="colne"
+              value="CollectionUtils.isNotEmpty($VAR$)"
+              description="CollectionUtils.isNotEmpty(Collection)"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="ifcolne"
+              value="if (CollectionUtils.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (CollectionUtils.isNotEmpty(Collection)) {}"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+
     <!-- List Is Empty -->
     <template name="liste"
               value="CollectionUtils.isEmpty($VAR$)"
@@ -161,7 +205,26 @@
               toReformat="false"
               toShortenFQNames="true">
         <context>
-            <option name="JAVA_CODE" value="true" />
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="emptylist"
+              value="Collections.emptyList();"
+              description="Collections.emptyList();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="singlist"
+              value="Collections.singletonList($VAR$);"
+              description="Collections.singletonList(Object);"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
         </context>
     </template>
 
@@ -227,7 +290,26 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA_CODE" value="true" />
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="emptyset"
+              value="Collections.emptySet();"
+              description="Collections.emptySet();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="singset"
+              value="Collections.singleton($VAR$);"
+              description="Collections.singleton(Object);"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
         </context>
     </template>
 
@@ -344,6 +426,25 @@
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="emptymap"
+              value="Collections.emptyMap();"
+              description="Collections.emptyMap();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA" value="true"/>
+        </context>
+    </template>
+    <template name="singmap"
+              value="Collections.singletonMap($END$, $VAR$);"
+              description="Collections.singletonMap(K, V);"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA" value="true"/>
         </context>
     </template>
 
@@ -809,6 +910,25 @@
         </context>
     </template>
     <template name="param" value="@Param(&quot;$END$&quot;)" description="@Param(&quot;&quot;)"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+
+    <template name="runwith" value="@RunWith(SpringRunner.class)" description="@RunWith(SpringRunner.class)"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+    <template name="springtest" value="@SpringBootTest" description="@SpringBootTest"
+              toReformat="false" toShortenFQNames="false">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+    <template name="test" value="@Test" description="@Test"
               toReformat="false" toShortenFQNames="false">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
