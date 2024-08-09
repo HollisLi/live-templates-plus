@@ -107,7 +107,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifcole"
@@ -117,7 +117,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -129,7 +129,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifcolne"
@@ -139,7 +139,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -214,7 +214,7 @@
               toReformat="false"
               toShortenFQNames="true">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="singlist"
@@ -224,7 +224,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -299,7 +299,7 @@
               toReformat="false"
               toShortenFQNames="true">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="singset"
@@ -309,7 +309,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -434,7 +434,7 @@
               toReformat="false"
               toShortenFQNames="true">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="singmap"
@@ -444,7 +444,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -500,7 +500,7 @@
     <!--              toShortenFQNames="false">-->
     <!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
     <!--        <context>-->
-    <!--            <option name="JAVA" value="true"/>-->
+    <!--            <option name="JAVA_CODE" value="true"/>-->
     <!--        </context>-->
     <!--    </template>-->
     <!--    <template name="iffileexist"-->
@@ -510,7 +510,7 @@
     <!--              toShortenFQNames="false">-->
     <!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
     <!--        <context>-->
-    <!--            <option name="JAVA" value="true"/>-->
+    <!--            <option name="JAVA_CODE" value="true"/>-->
     <!--        </context>-->
     <!--    </template>-->
 
@@ -522,7 +522,7 @@
     <!--              toShortenFQNames="false">-->
     <!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
     <!--        <context>-->
-    <!--            <option name="JAVA" value="true"/>-->
+    <!--            <option name="JAVA_CODE" value="true"/>-->
     <!--        </context>-->
     <!--    </template>-->
     <!--    <template name="iffilenexist"-->
@@ -532,7 +532,7 @@
     <!--              toShortenFQNames="false">-->
     <!--        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>-->
     <!--        <context>-->
-    <!--            <option name="JAVA" value="true"/>-->
+    <!--            <option name="JAVA_CODE" value="true"/>-->
     <!--        </context>-->
     <!--    </template>-->
 
@@ -566,7 +566,7 @@
     <!--              toShortenFQNames="false">-->
     <!--        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>-->
     <!--        <context>-->
-    <!--            <option name="JAVA" value="true"/>-->
+    <!--            <option name="JAVA_CODE" value="true"/>-->
     <!--        </context>-->
     <!--    </template>-->
 
@@ -589,7 +589,7 @@
               toShortenFQNames="false">
         <variable name="VAR" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
@@ -675,14 +675,14 @@
               toReformat="false"
               toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <template name="prif" value="private final " description="private final "
               toReformat="false" toShortenFQNames="false">
         <context>
-            <option name="JAVA" value="true"/>
+            <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
