@@ -217,6 +217,15 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
+    <template name="elist"
+              value="Collections.emptyList();"
+              description="Collections.emptyList();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
     <template name="singlist"
               value="Collections.singletonList($VAR$);"
               description="Collections.singletonList(Object);"
@@ -294,6 +303,15 @@
         </context>
     </template>
     <template name="emptyset"
+              value="Collections.emptySet();"
+              description="Collections.emptySet();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="eset"
               value="Collections.emptySet();"
               description="Collections.emptySet();"
               toReformat="false"
@@ -437,7 +455,26 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
+    <template name="emap"
+              value="Collections.emptyMap();"
+              description="Collections.emptyMap();"
+              toReformat="false"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
     <template name="singmap"
+              value="Collections.singletonMap($END$, $VAR$);"
+              description="Collections.singletonMap(K, V);"
+              toReformat="false"
+              toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="smap"
               value="Collections.singletonMap($END$, $VAR$);"
               description="Collections.singletonMap(K, V);"
               toReformat="false"
@@ -547,9 +584,29 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
+    <!-- BigDecimal Zero-->
+    <template name="bz"
+              value="BigDecimal.ZERO"
+              description="BigDecimal.ZERO"
+              toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
 
     <!-- RoundingMode.HALF_UP -->
     <template name="dec4"
+              value="RoundingMode.HALF_UP"
+              description="RoundingMode.HALF_UP"
+              toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <!-- RoundingMode.HALF_UP -->
+    <template name="up"
               value="RoundingMode.HALF_UP"
               description="RoundingMode.HALF_UP"
               toReformat="false"
@@ -572,6 +629,15 @@
     </template>
 
     <!-- new Date -->
+    <template name="now"
+              value="Date now = new Date();"
+              description="Date now = new Date();"
+              toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
     <template name="newdate"
               value="Date now = new Date();"
               description="Date now = new Date();"
@@ -584,6 +650,15 @@
     <template name="localnow"
               value="LocalDateTime now = LocalDateTime.now();"
               description="LocalDateTime now = LocalDateTime.now();"
+              toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="datef"
+              value="DateUtil.format($VAR$, DatePattern.NORM_DATETIME_PATTERN);"
+              description="DateUtil.format(param, 'yyyy-MM-dd HH:mm:ss');"
               toReformat="false"
               toShortenFQNames="false">
         <context>
