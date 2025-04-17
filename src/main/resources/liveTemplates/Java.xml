@@ -661,6 +661,7 @@
               description="DateUtil.format(param, 'yyyy-MM-dd HH:mm:ss');"
               toReformat="false"
               toShortenFQNames="false">
+        <variable name="VAR" expression="suggestFirstVariableName(Date)" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
