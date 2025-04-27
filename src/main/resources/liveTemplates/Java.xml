@@ -10,7 +10,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifsb"
+    <template name="isb"
               value="if (StrUtil.isBlank($VAR$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.isBlank(String)) {}"
               toReformat="false"
@@ -32,7 +32,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifsnb"
+    <template name="isnb"
               value="if (StrUtil.isNotBlank($VAR$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.isNotBlank(String)) {}"
               toReformat="false"
@@ -44,7 +44,7 @@
     </template>
 
     <!-- String Is Equals -->
-    <template name="se"
+    <template name="seq"
               value="StrUtil.equals($VAR$, $END$)"
               description="StrUtil.equals(str1, str2)"
               toReformat="false"
@@ -54,7 +54,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifse"
+    <template name="iseq"
               value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.equals(str1, str2)) {}"
               toReformat="false"
@@ -66,7 +66,7 @@
     </template>
 
     <!-- String Is Not Equals -->
-    <template name="sne"
+    <template name="sneq"
               value="!StrUtil.equals($VAR$, $END$)"
               description="!StrUtil.equals(str1, str2)"
               toReformat="false"
@@ -76,7 +76,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifsne"
+    <template name="isneq"
               value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
               description="if (!StrUtil.equals(str1, str2)) {}"
               toReformat="false"
@@ -110,7 +110,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifce"
+    <template name="ice"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(Collection)) {}"
               toReformat="false"
@@ -132,7 +132,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifcne"
+    <template name="icne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(Collection)) {}"
               toReformat="false"
@@ -154,7 +154,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifle"
+    <template name="ile"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(List)) {}"
               toReformat="false"
@@ -176,7 +176,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iflne"
+    <template name="ilne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(List)) {}"
               toReformat="false"
@@ -239,7 +239,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifse"
+    <template name="ise"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(Set)) {}"
               toReformat="false"
@@ -261,7 +261,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifsne"
+    <template name="isne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(Set)) {}"
               toReformat="false"
@@ -324,7 +324,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifae"
+    <template name="iae"
               value="if (ArrayUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (ArrayUtil.isEmpty(Object[])) {}"
               toReformat="false"
@@ -346,7 +346,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifane"
+    <template name="iane"
               value="if (ArrayUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (ArrayUtil.isNotEmpty(Object[])) {}"
               toReformat="false"
@@ -382,7 +382,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifme"
+    <template name="ime"
               value="if (MapUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (MapUtil.isEmpty(Map)) {}"
               toReformat="false"
@@ -404,7 +404,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifmne"
+    <template name="imne"
               value="if (MapUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (MapUtil.isNotEmpty(Map)) {}"
               toReformat="false"
@@ -469,7 +469,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifobn"
+    <template name="iobn"
               value="if (ObjectUtil.isNull($VAR$)) {&#10;    $END$&#10;}"
               description="if (ObjectUtil.isNull(Object)) {}"
               toReformat="false"
@@ -491,7 +491,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifobnn"
+    <template name="iobnn"
               value="if (ObjectUtil.isNotNull($VAR$)) {&#10;    $END$&#10;}"
               description="if (ObjectUtil.isNotNull(Object)) {}"
               toReformat="false"
@@ -513,7 +513,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iffex"
+    <template name="ifex"
               value="if (FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (FileUtil.exist(File||String)) {}"
               toReformat="false"
@@ -535,7 +535,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iffnex"
+    <template name="ifnex"
               value="if (!FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (!FileUtil.exist(File||String)) {}"
               toReformat="false"
