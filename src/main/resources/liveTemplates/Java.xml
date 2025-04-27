@@ -1,6 +1,6 @@
 <templateSet group="Java">
     <!-- String Is Blank -->
-    <template name="strb"
+    <template name="sb"
               value="StrUtil.isBlank($VAR$)"
               description="StrUtil.isBlank(String)"
               toReformat="false"
@@ -10,7 +10,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifstrb"
+    <template name="ifsb"
               value="if (StrUtil.isBlank($VAR$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.isBlank(String)) {}"
               toReformat="false"
@@ -22,7 +22,7 @@
     </template>
 
     <!-- String Is Not Blank -->
-    <template name="strnb"
+    <template name="snb"
               value="StrUtil.isNotBlank($VAR$)"
               description="StrUtil.isNotBlank(String)"
               toReformat="false"
@@ -32,7 +32,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifstrnb"
+    <template name="ifsnb"
               value="if (StrUtil.isNotBlank($VAR$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.isNotBlank(String)) {}"
               toReformat="false"
@@ -44,7 +44,7 @@
     </template>
 
     <!-- String Is Equals -->
-    <template name="stre"
+    <template name="se"
               value="StrUtil.equals($VAR$, $END$)"
               description="StrUtil.equals(str1, str2)"
               toReformat="false"
@@ -54,7 +54,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifstre"
+    <template name="ifse"
               value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.equals(str1, str2)) {}"
               toReformat="false"
@@ -66,7 +66,7 @@
     </template>
 
     <!-- String Is Not Equals -->
-    <template name="strne"
+    <template name="sne"
               value="!StrUtil.equals($VAR$, $END$)"
               description="!StrUtil.equals(str1, str2)"
               toReformat="false"
@@ -76,7 +76,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifstrne"
+    <template name="ifsne"
               value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
               description="if (!StrUtil.equals(str1, str2)) {}"
               toReformat="false"
@@ -88,7 +88,7 @@
     </template>
 
     <!-- String Format -->
-    <template name="strf"
+    <template name="sfmt"
               value="StrUtil.format($VAR$, $END$)"
               description="StrUtil.format()"
               toReformat="false"
@@ -100,7 +100,7 @@
     </template>
 
     <!-- Collection Is Empty -->
-    <template name="cole"
+    <template name="ce"
               value="CollectionUtil.isEmpty($VAR$)"
               description="CollectionUtil.isEmpty(Collection)"
               toReformat="false"
@@ -110,7 +110,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifcole"
+    <template name="ifce"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(Collection)) {}"
               toReformat="false"
@@ -122,7 +122,7 @@
     </template>
 
     <!-- List Is Not Empty -->
-    <template name="colne"
+    <template name="cne"
               value="CollectionUtil.isNotEmpty($VAR$)"
               description="CollectionUtil.isNotEmpty(Collection)"
               toReformat="false"
@@ -132,7 +132,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifcolne"
+    <template name="ifcne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(Collection)) {}"
               toReformat="false"
@@ -144,7 +144,7 @@
     </template>
 
     <!-- List Is Empty -->
-    <template name="liste"
+    <template name="le"
               value="CollectionUtil.isEmpty($VAR$)"
               description="CollectionUtil.isEmpty(List)"
               toReformat="false"
@@ -154,7 +154,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifliste"
+    <template name="ifle"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(List)) {}"
               toReformat="false"
@@ -166,7 +166,7 @@
     </template>
 
     <!-- List Is Not Empty -->
-    <template name="listne"
+    <template name="lne"
               value="CollectionUtil.isNotEmpty($VAR$)"
               description="CollectionUtil.isNotEmpty(List)"
               toReformat="false"
@@ -176,7 +176,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iflistne"
+    <template name="iflne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(List)) {}"
               toReformat="false"
@@ -188,7 +188,7 @@
     </template>
 
     <!-- List Init -->
-    <template name="newlist"
+    <template name="lnew"
               value="List&lt;$VAR1$&gt; $VAR2$ = new ArrayList&lt;&gt;();"
               description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
               toReformat="false"
@@ -199,16 +199,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="newliste"
-              value="Collections.emptyList();"
-              description="Collections.emptyList();"
-              toReformat="false"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="emptylist"
+    <template name="lem"
               value="Collections.emptyList();"
               description="Collections.emptyList();"
               toReformat="false"
@@ -226,7 +217,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="singlist"
+    <template name="lsing"
               value="Collections.singletonList($VAR$);"
               description="Collections.singletonList(Object);"
               toReformat="false"
@@ -238,7 +229,7 @@
     </template>
 
     <!-- Set Is Empty -->
-    <template name="sete"
+    <template name="se"
               value="CollectionUtil.isEmpty($VAR$)"
               description="CollectionUtil.isEmpty(Set)"
               toReformat="false"
@@ -248,7 +239,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifsete"
+    <template name="ifse"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(Set)) {}"
               toReformat="false"
@@ -260,7 +251,7 @@
     </template>
 
     <!-- Set Is Not Empty -->
-    <template name="setne"
+    <template name="sne"
               value="CollectionUtil.isNotEmpty($VAR$)"
               description="CollectionUtil.isNotEmpty(Set)"
               toReformat="false"
@@ -270,7 +261,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifsetne"
+    <template name="ifsne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(Set)) {}"
               toReformat="false"
@@ -282,7 +273,7 @@
     </template>
 
     <!-- Set Init -->
-    <template name="newset"
+    <template name="snew"
               value="Set&lt;$VAR1$&gt; $VAR2$ = new LinkedHashSet&lt;&gt;();"
               description="Set&lt;?&gt; list = new LinkedHashSet&lt;&gt;()"
               toReformat="false"
@@ -293,20 +284,11 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="newsete"
+    <template name="sem"
               value="Collections.emptySet();"
               description="Collections.emptySet();"
               toReformat="false"
               toShortenFQNames="false">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="emptyset"
-              value="Collections.emptySet();"
-              description="Collections.emptySet();"
-              toReformat="false"
-              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -320,7 +302,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="singset"
+    <template name="ssing"
               value="Collections.singleton($VAR$);"
               description="Collections.singleton(Object);"
               toReformat="false"
@@ -332,7 +314,7 @@
     </template>
 
     <!-- Array Is Empty -->
-    <template name="arre"
+    <template name="ae"
               value="ArrayUtil.isEmpty($VAR$)"
               description="ArrayUtil.isEmpty(Object[])"
               toReformat="false"
@@ -342,7 +324,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifarre"
+    <template name="ifae"
               value="if (ArrayUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (ArrayUtil.isEmpty(Object[])) {}"
               toReformat="false"
@@ -354,7 +336,7 @@
     </template>
 
     <!-- Array Is Not Empty -->
-    <template name="arrne"
+    <template name="ane"
               value="ArrayUtil.isNotEmpty($VAR$)"
               description="ArrayUtil.isNotEmpty(Object[])"
               toReformat="false"
@@ -364,7 +346,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifarrne"
+    <template name="ifane"
               value="if (ArrayUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (ArrayUtil.isNotEmpty(Object[])) {}"
               toReformat="false"
@@ -376,7 +358,7 @@
     </template>
 
     <!-- Array Init -->
-    <template name="newarr"
+    <template name="anew"
               value="$VAR1$[] $VAR2$ = new $VAR1$[]{$VAR3$};"
               description="Object[] array = new Object[]{var1, var2, var3}"
               toReformat="false"
@@ -390,7 +372,7 @@
     </template>
 
     <!-- Map Is Empty -->
-    <template name="mape"
+    <template name="me"
               value="MapUtil.isEmpty($VAR$)"
               description="MapUtil.isEmpty(Map)"
               toReformat="false"
@@ -400,7 +382,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifmape"
+    <template name="ifme"
               value="if (MapUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (MapUtil.isEmpty(Map)) {}"
               toReformat="false"
@@ -412,7 +394,7 @@
     </template>
 
     <!-- Map Is Not Empty -->
-    <template name="mapne"
+    <template name="mne"
               value="MapUtil.isNotEmpty($VAR$)"
               description="MapUtil.isNotEmpty(Map)"
               toReformat="false"
@@ -422,7 +404,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifmapne"
+    <template name="ifmne"
               value="if (MapUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (MapUtil.isNotEmpty(Map)) {}"
               toReformat="false"
@@ -434,7 +416,7 @@
     </template>
 
     <!-- Map Init -->
-    <template name="newmap"
+    <template name="mnew"
               value="Map&lt;$VAR1$, $VAR2$&gt; $VAR3$ = new HashMap&lt;&gt;();"
               description="Map&lt;?, ?&gt; hashMap = new HashMap&lt;&gt;()"
               toReformat="false"
@@ -446,7 +428,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="emptymap"
+    <template name="mem"
               value="Collections.emptyMap();"
               description="Collections.emptyMap();"
               toReformat="false"
@@ -464,17 +446,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="singmap"
-              value="Collections.singletonMap($END$, $VAR$);"
-              description="Collections.singletonMap(K, V);"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="smap"
+    <template name="msing"
               value="Collections.singletonMap($END$, $VAR$);"
               description="Collections.singletonMap(K, V);"
               toReformat="false"
@@ -531,7 +503,7 @@
     </template>
 
     <!-- File Exist -->
-    <template name="fileexist"
+    <template name="fex"
               value="FileUtil.exist($VAR$)"
               description="FileUtil.exist(File||String)"
               toReformat="false"
@@ -541,7 +513,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iffileexist"
+    <template name="iffex"
               value="if (FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (FileUtil.exist(File||String)) {}"
               toReformat="false"
@@ -553,7 +525,7 @@
     </template>
 
     <!-- File Not Exist -->
-    <template name="filenexist"
+    <template name="fnex"
               value="!FileUtil.exist($VAR$)"
               description="!FileUtil.exist(File||String)"
               toReformat="false"
@@ -563,7 +535,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iffilenexist"
+    <template name="iffnex"
               value="if (!FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (!FileUtil.exist(File||String)) {}"
               toReformat="false"
@@ -575,7 +547,7 @@
     </template>
 
     <!-- BigDecimal Zero-->
-    <template name="deczero"
+    <template name="zero"
               value="BigDecimal.ZERO"
               description="BigDecimal.ZERO"
               toReformat="false"
@@ -596,16 +568,6 @@
     </template>
 
     <!-- RoundingMode.HALF_UP -->
-    <template name="dec4"
-              value="RoundingMode.HALF_UP"
-              description="RoundingMode.HALF_UP"
-              toReformat="false"
-              toShortenFQNames="false">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <!-- RoundingMode.HALF_UP -->
     <template name="up"
               value="RoundingMode.HALF_UP"
               description="RoundingMode.HALF_UP"
@@ -617,7 +579,7 @@
     </template>
 
     <!-- Parse JsonStr -->
-    <template name="tojsonstr"
+    <template name="tojs"
               value="JSONUtil.toJsonStr($VAR$)"
               description="JSONUtil.toJsonStr(var)"
               toReformat="false"
@@ -638,7 +600,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="newdate"
+    <template name="dnew"
               value="Date now = new Date();"
               description="Date now = new Date();"
               toReformat="false"
@@ -656,7 +618,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="datef"
+    <template name="dfmt"
               value="DateUtil.format($VAR$, DatePattern.NORM_DATETIME_PATTERN);"
               description="DateUtil.format(param, 'yyyy-MM-dd HH:mm:ss');"
               toReformat="false"
@@ -941,7 +903,7 @@
     </template>
 
 
-    <template name="jsonfor"
+    <template name="jsonfmt"
               value="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
               description="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
               toReformat="false" toShortenFQNames="false">
@@ -949,7 +911,7 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-    <template name="datefor"
+    <template name="datefmt"
               value="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               toReformat="false" toShortenFQNames="false">
@@ -957,7 +919,7 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-    <template name="dateforiso"
+    <template name="datefmtiso"
               value="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
               description="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
               toReformat="false" toShortenFQNames="false">
