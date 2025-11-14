@@ -1,368 +1,239 @@
 <templateSet group="Java">
     <!-- String Is Blank -->
-    <template name="sb"
+    <template name="strb"
               value="StrUtil.isBlank($VAR$)"
               description="StrUtil.isBlank(String)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="isb"
+    <template name="ifstrb"
               value="if (StrUtil.isBlank($VAR$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.isBlank(String)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- String Is Not Blank -->
-    <template name="snb"
+    <template name="strnb"
               value="StrUtil.isNotBlank($VAR$)"
               description="StrUtil.isNotBlank(String)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="isnb"
+    <template name="ifstrnb"
               value="if (StrUtil.isNotBlank($VAR$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.isNotBlank(String)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- String Is Equals -->
-    <template name="seq"
+    <template name="streq"
               value="StrUtil.equals($VAR$, $END$)"
-              description="StrUtil.equals(str1, str2)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              description="StrUtil.equals(s1, s2)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iseq"
+    <template name="ifstreq"
               value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
-              description="if (StrUtil.equals(str1, str2)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- String Is Not Equals -->
-    <template name="sneq"
-              value="!StrUtil.equals($VAR$, $END$)"
-              description="!StrUtil.equals(str1, str2)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="isneq"
-              value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
-              description="if (!StrUtil.equals(str1, str2)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              description="if (StrUtil.equals(s1, s2)) {}"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- String Format -->
-    <template name="sfmt"
+    <template name="strfmt"
               value="StrUtil.format($VAR$, $END$)"
               description="StrUtil.format()"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(String)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Collection Is Empty -->
-    <template name="ce"
+    <template name="cole"
               value="CollectionUtil.isEmpty($VAR$)"
               description="CollectionUtil.isEmpty(Collection)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ice"
+    <template name="ifcole"
               value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isEmpty(Collection)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
-    <!-- List Is Not Empty -->
-    <template name="cne"
+    <!-- Collection Is Not Empty -->
+    <template name="colne"
               value="CollectionUtil.isNotEmpty($VAR$)"
               description="CollectionUtil.isNotEmpty(Collection)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="icne"
+    <template name="ifcolne"
               value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (CollectionUtil.isNotEmpty(Collection)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- List Is Empty -->
-    <template name="le"
-              value="CollectionUtil.isEmpty($VAR$)"
-              description="CollectionUtil.isEmpty(List)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="ile"
-              value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isEmpty(List)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- List Is Not Empty -->
-    <template name="lne"
-              value="CollectionUtil.isNotEmpty($VAR$)"
-              description="CollectionUtil.isNotEmpty(List)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="ilne"
-              value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isNotEmpty(List)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(List)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- List Init -->
-    <template name="lnew"
-              value="List&lt;$VAR1$&gt; $VAR2$ = new ArrayList&lt;&gt;();"
+    <template name="listnew"
+              value="List&lt;$VAR1$&gt; $END$ = new ArrayList&lt;&gt;();"
               description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="lem"
+    <template name="listemp"
               value="Collections.emptyList();"
               description="Collections.emptyList();"
-              toReformat="false"
+              toReformat="true"
               toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="elist"
-              value="Collections.emptyList();"
-              description="Collections.emptyList();"
-              toReformat="false"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="lsing"
+    <template name="listsin"
               value="Collections.singletonList($VAR$);"
               description="Collections.singletonList(Object);"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- Set Is Empty -->
-    <template name="se"
-              value="CollectionUtil.isEmpty($VAR$)"
-              description="CollectionUtil.isEmpty(Set)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="ise"
-              value="if (CollectionUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isEmpty(Set)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- Set Is Not Empty -->
-    <template name="sne"
-              value="CollectionUtil.isNotEmpty($VAR$)"
-              description="CollectionUtil.isNotEmpty(Set)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="isne"
-              value="if (CollectionUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (CollectionUtil.isNotEmpty(Set)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Set)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Set Init -->
-    <template name="snew"
+    <template name="setnew"
               value="Set&lt;$VAR1$&gt; $VAR2$ = new LinkedHashSet&lt;&gt;();"
               description="Set&lt;?&gt; list = new LinkedHashSet&lt;&gt;()"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="sem"
+    <template name="setemp"
               value="Collections.emptySet();"
               description="Collections.emptySet();"
-              toReformat="false"
-              toShortenFQNames="false">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="eset"
-              value="Collections.emptySet();"
-              description="Collections.emptySet();"
-              toReformat="false"
+              toReformat="true"
               toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ssing"
+    <template name="setsin"
               value="Collections.singleton($VAR$);"
               description="Collections.singleton(Object);"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Array Is Empty -->
-    <template name="ae"
+    <template name="arre"
               value="ArrayUtil.isEmpty($VAR$)"
               description="ArrayUtil.isEmpty(Object[])"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iae"
+    <template name="ifarre"
               value="if (ArrayUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (ArrayUtil.isEmpty(Object[])) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Array Is Not Empty -->
-    <template name="ane"
+    <template name="arrne"
               value="ArrayUtil.isNotEmpty($VAR$)"
               description="ArrayUtil.isNotEmpty(Object[])"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iane"
+    <template name="ifarrne"
               value="if (ArrayUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (ArrayUtil.isNotEmpty(Object[])) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Array)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Array Init -->
-    <template name="anew"
+    <template name="arrnew"
               value="$VAR1$[] $VAR2$ = new $VAR1$[]{$VAR3$};"
               description="Object[] array = new Object[]{var1, var2, var3}"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
@@ -372,55 +243,55 @@
     </template>
 
     <!-- Map Is Empty -->
-    <template name="me"
+    <template name="mape"
               value="MapUtil.isEmpty($VAR$)"
               description="MapUtil.isEmpty(Map)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ime"
+    <template name="ifmape"
               value="if (MapUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (MapUtil.isEmpty(Map)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Map Is Not Empty -->
-    <template name="mne"
+    <template name="mapne"
               value="MapUtil.isNotEmpty($VAR$)"
               description="MapUtil.isNotEmpty(Map)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="imne"
+    <template name="ifmapne"
               value="if (MapUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
               description="if (MapUtil.isNotEmpty(Map)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Map)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Map Init -->
-    <template name="mnew"
+    <template name="mapnew"
               value="Map&lt;$VAR1$, $VAR2$&gt; $VAR3$ = new HashMap&lt;&gt;();"
               description="Map&lt;?, ?&gt; hashMap = new HashMap&lt;&gt;()"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR1" expression="className()" defaultValue="String" alwaysStopAt="true"/>
         <variable name="VAR1" expression="className()" defaultValue="String" alwaysStopAt="true"/>
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
@@ -428,30 +299,21 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="mem"
+    <template name="mapemp"
               value="Collections.emptyMap();"
               description="Collections.emptyMap();"
-              toReformat="false"
+              toReformat="true"
               toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="emap"
-              value="Collections.emptyMap();"
-              description="Collections.emptyMap();"
-              toReformat="false"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="msing"
+    <template name="mapsin"
               value="Collections.singletonMap($END$, $VAR$);"
               description="Collections.singletonMap(K, V);"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -462,19 +324,19 @@
     <template name="obn"
               value="ObjectUtil.isNull($VAR$)"
               description="ObjectUtil.isNull(Object)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iobn"
+    <template name="ifobn"
               value="if (ObjectUtil.isNull($VAR$)) {&#10;    $END$&#10;}"
               description="if (ObjectUtil.isNull(Object)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -484,40 +346,40 @@
     <template name="obnn"
               value="ObjectUtil.isNotNull($VAR$)"
               description="ObjectUtil.isNotNull(Object)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iobnn"
+    <template name="ifobnn"
               value="if (ObjectUtil.isNotNull($VAR$)) {&#10;    $END$&#10;}"
               description="if (ObjectUtil.isNotNull(Object)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- File Exist -->
-    <template name="fex"
+    <template name="filee"
               value="FileUtil.exist($VAR$)"
               description="FileUtil.exist(File||String)"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifex"
+    <template name="iffilee"
               value="if (FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (FileUtil.exist(File||String)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -525,21 +387,21 @@
     </template>
 
     <!-- File Not Exist -->
-    <template name="fnex"
+    <template name="filene"
               value="!FileUtil.exist($VAR$)"
               description="!FileUtil.exist(File||String)"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifnex"
+    <template name="iffilene"
               value="if (!FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (!FileUtil.exist(File||String)) {}"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -550,8 +412,8 @@
     <template name="zero"
               value="BigDecimal.ZERO"
               description="BigDecimal.ZERO"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -560,8 +422,8 @@
     <template name="bz"
               value="BigDecimal.ZERO"
               description="BigDecimal.ZERO"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -571,20 +433,20 @@
     <template name="up"
               value="RoundingMode.HALF_UP"
               description="RoundingMode.HALF_UP"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <!-- Parse JsonStr -->
-    <template name="tojs"
+    <template name="tojson"
               value="JSONUtil.toJsonStr($VAR$)"
               description="JSONUtil.toJsonStr(var)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -594,17 +456,17 @@
     <template name="now"
               value="Date now = new Date();"
               description="Date now = new Date();"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="dnew"
+    <template name="datenew"
               value="Date now = new Date();"
               description="Date now = new Date();"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -612,18 +474,18 @@
     <template name="localnow"
               value="LocalDateTime now = LocalDateTime.now();"
               description="LocalDateTime now = LocalDateTime.now();"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="dfmt"
+    <template name="datefmt"
               value="DateUtil.format($VAR$, DatePattern.NORM_DATETIME_PATTERN);"
               description="DateUtil.format(param, 'yyyy-MM-dd HH:mm:ss');"
-              toReformat="false"
-              toShortenFQNames="false">
-        <variable name="VAR" expression="suggestFirstVariableName(Date)" defaultValue="" alwaysStopAt="true"/>
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -633,8 +495,8 @@
     <template name="loginit"
               value="private static final Logger log = LoggerFactory.getLogger($VAR$.class);"
               description="LoggerFactory.getLogger(Class)"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="VAR" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -643,14 +505,13 @@
 
     <!-- Log Info -->
     <template name="logi"
-              value="log.info(&quot;$FILE_NAME$#$FUNCTION_NAME$ $VAR$: {}&quot;, $VAR_VAL$);"
-              description="log.info(&quot;ClassName#FunctionName var: {}&quot;, var)"
-              toReformat="false"
-              toShortenFQNames="false">
+              value="log.info(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] param: {}&quot;, $VAR$);"
+              description="log.info(&quot;[ClassName]-[FunctionName] param: {}&quot;, var)"
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR_VAL" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -658,14 +519,13 @@
 
     <!-- Log Warn -->
     <template name="logw"
-              value="log.warn(&quot;$FILE_NAME$#$FUNCTION_NAME$ $VAR$: {}&quot;, $VAR_VAL$);"
-              description="log.warn(&quot;ClassName#FunctionName var: {}&quot;, var)"
-              toReformat="false"
-              toShortenFQNames="false">
+              value="log.warn(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] param: {}&quot;, $VAR$);"
+              description="log.warn(&quot;[ClassName]-[FunctionName] param: {}&quot;, var)"
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR_VAL" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -673,13 +533,13 @@
 
     <!-- Log Error -->
     <template name="loge"
-              value="log.error(&quot;$FILE_NAME$#$FUNCTION_NAME$ Error, functionParam: {}, errorMessage: {}&quot;, $VAR$, e.getMessage(), e);"
-              description="log.error(&quot;ClassName#FunctionName Error, functionParam:{}, errorMessage: {}&quot;, var, e.getMessage(), e);"
-              toReformat="false"
-              toShortenFQNames="false">
+              value="log.error(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] Error, param: {}, errorMessage: {}&quot;, $VAR$, e.getMessage(), e);"
+              description="log.error(&quot;[ClassName]-[FunctionName] Error, param: {}, errorMessage: {}&quot;, var, e.getMessage(), e);"
+              toReformat="true"
+              toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="suggestFirstVariableName(Object)" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -689,8 +549,8 @@
     <template name="thrr"
               value="throw new RuntimeException(&quot;$END$&quot;);"
               description="throw new RuntimeException(&quot;&quot;)"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -700,19 +560,10 @@
     <template name="thrb"
               value="throw new BusinessException(&quot;$END$&quot;);"
               description="throw new BusinessException(&quot;&quot;)"
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="thrbb"
-              value="throw new BusinessException(500, &quot;$END$&quot;);"
-              description="throw new BusinessException(500, &quot;&quot;)"
-              toReformat="false"
-              toShortenFQNames="false">
-        <context>
-            <option name="JAVA" value="false"/>
         </context>
     </template>
 
@@ -720,15 +571,15 @@
     <template name="zs"
               value="/**&#10; * $END$&#10; */"
               description=""
-              toReformat="false"
-              toShortenFQNames="false">
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
     <template name="prif" value="private final " description="private final "
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -738,13 +589,13 @@
     <!-- =============================================== Annotation =============================================== -->
 
 
-    <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="false" toShortenFQNames="false">
+    <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="logfj" value="@Log4j2" description="@Log4j2"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -752,25 +603,25 @@
 
 
     <template name="restc" value="@RestController" description="@RestController"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="comp" value="@Component" description="@Component"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="service" value="@Service" description="@Service"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="mapper" value="@Mapper" description="@Mapper"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -778,13 +629,13 @@
 
 
     <template name="auto" value="@Autowired" description="@Autowired"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="resource" value="@Resource" description="@Resource"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -792,45 +643,45 @@
 
 
     <template name="reqm" value="@RequestMapping(&quot;/$END$&quot;)" description="@RequestMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="getm" value="@GetMapping(&quot;/$END$&quot;)" description="@GetMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="postm" value="@PostMapping(&quot;/$END$&quot;)" description="@PostMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="putm" value="@PutMapping(&quot;/$END$&quot;)" description="@PutMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="delm" value="@DeleteMapping(&quot;/$END$&quot;)" description="@DeleteMapping(&quot;/&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
 
-    <template name="reqp" value="@RequestParam(&quot;$END$&quot;) " description="@RequestParam(&quot;&quot;)"
-              toReformat="false" toShortenFQNames="false">
+    <template name="reqp" value="@RequestParam" description="@RequestParam"
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="reqb" value="@RequestBody " description="@RequestBody "
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -838,19 +689,19 @@
 
 
     <template name="allarg" value="@AllArgsConstructor" description="@AllArgsConstructor"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="noarg" value="@NoArgsConstructor" description="@NoArgsConstructor"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="reqarg" value="@RequiredArgsConstructor" description="@RequiredArgsConstructor"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -858,31 +709,31 @@
 
 
     <template name="data" value="@Data" description="@Data"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="builder" value="@Builder" description="@Builder"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="getter" value="@Getter" description="@Getter"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="setter" value="@Setter" description="@Setter"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="tostring" value="@ToString" description="@ToString"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -890,13 +741,13 @@
 
 
     <template name="enumv" value="@EnumValue" description="@EnumValue"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="clean" value="@Cleanup " description="@Cleanup "
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -906,7 +757,7 @@
     <template name="jsonfmt"
               value="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
               description="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -914,7 +765,7 @@
     <template name="datefmt"
               value="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -922,70 +773,70 @@
     <template name="datefmtiso"
               value="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
               description="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
 
-    <template name="validated" value="@Validated" description="@Validated"
-              toReformat="false" toShortenFQNames="false">
+    <template name="validd" value="@Validated" description="@Validated"
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="valid" value="@Valid " description="@Valid "
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="notn" value="@NotNull(message = &quot;$END$&quot;)" description="@NotNull(message = &quot;&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="notb" value="@NotBlank(message = &quot;$END$&quot;)" description="@NotBlank(message = &quot;&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="size" value="@Size(&quot;$END$&quot;)" description="@Size(&quot;&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="length" value="@Length(&quot;$END$&quot;)" description="@Length(&quot;&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="param" value="@Param(&quot;$END$&quot;)" description="@Param(&quot;&quot;)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
 
     <template name="runwith" value="@RunWith(SpringRunner.class)" description="@RunWith(SpringRunner.class)"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="springtest" value="@SpringBootTest" description="@SpringBootTest"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
     <template name="test" value="@Test" description="@Test"
-              toReformat="false" toShortenFQNames="false">
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
