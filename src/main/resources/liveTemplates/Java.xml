@@ -892,7 +892,7 @@
               description="&lt;![CDATA[]]&gt;"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="enum(&quot;&lt;&quot;,&quot;&gt;&quot;,&quot;<=&quot;,&quot;&gt;=&quot;)"
+        <variable name="VAR" expression="enum(&quot;&lt;&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&gt;=&quot;)"
                   defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="XML" value="true"/>
