@@ -878,8 +878,8 @@
         </context>
     </template>
     <template name="foreach"
-              value="<foreach collection=&quot;$VAR$&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;&#10;    #{item}&#10;</foreach>"
-              description="<foreach collection=&quot;VAR&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;#{item}</foreach>"
+              value="&lt;foreach collection=&quot;$VAR$&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;&#10;    #{item}&#10;&lt;/foreach&gt;"
+              description="&lt;foreach collection=&quot;VAR&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;#{item}&lt;/foreach&gt;"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
@@ -892,7 +892,7 @@
               description="&lt;![CDATA[]]&gt;"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="enum(&quot;<&quot;,&quot;&gt;&quot;,&quot;<=&quot;,&quot;&gt;=&quot;)"
+        <variable name="VAR" expression="enum(&quot;&lt;&quot;,&quot;&gt;&quot;,&quot;<=&quot;,&quot;&gt;=&quot;)"
                   defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="XML" value="true"/>
