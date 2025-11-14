@@ -848,6 +848,12 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
+    <template name="trans" value="@Transactional(rollbackFor = Exception.class)" description="@Transactional(rollbackFor = Exception.class)"
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
 
     <template name="runwith" value="@RunWith(SpringRunner.class)" description="@RunWith(SpringRunner.class)"
               toReformat="true" toShortenFQNames="true">
