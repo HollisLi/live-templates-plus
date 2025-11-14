@@ -5,7 +5,7 @@
               description="StrUtil.isBlank(String)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -15,7 +15,7 @@
               description="if (StrUtil.isBlank(String)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -27,7 +27,7 @@
               description="StrUtil.isNotBlank(String)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -37,7 +37,7 @@
               description="if (StrUtil.isNotBlank(String)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -49,7 +49,7 @@
               description="StrUtil.equals(s1, s2)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -59,7 +59,7 @@
               description="if (StrUtil.equals(s1, s2)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -71,7 +71,7 @@
               description="StrUtil.format()"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -83,7 +83,7 @@
               description="CollectionUtil.isEmpty(Collection)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -93,7 +93,7 @@
               description="if (CollectionUtil.isEmpty(Collection)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -105,7 +105,7 @@
               description="CollectionUtil.isNotEmpty(Collection)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -115,7 +115,7 @@
               description="if (CollectionUtil.isNotEmpty(Collection)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -146,7 +146,7 @@
               description="Collections.singletonList(Object);"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -178,7 +178,7 @@
               description="Collections.singleton(Object);"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -190,7 +190,7 @@
               description="ArrayUtil.isEmpty(Object[])"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -200,7 +200,7 @@
               description="if (ArrayUtil.isEmpty(Object[])) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -212,7 +212,7 @@
               description="ArrayUtil.isNotEmpty(Object[])"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -222,7 +222,7 @@
               description="if (ArrayUtil.isNotEmpty(Object[])) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -248,7 +248,7 @@
               description="MapUtil.isEmpty(Map)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -258,7 +258,7 @@
               description="if (MapUtil.isEmpty(Map)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -270,7 +270,7 @@
               description="MapUtil.isNotEmpty(Map)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -280,7 +280,7 @@
               description="if (MapUtil.isNotEmpty(Map)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -313,7 +313,7 @@
               description="Collections.singletonMap(K, V);"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -326,7 +326,7 @@
               description="ObjectUtil.isNull(Object)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -336,7 +336,7 @@
               description="if (ObjectUtil.isNull(Object)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -348,7 +348,7 @@
               description="ObjectUtil.isNotNull(Object)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -358,7 +358,7 @@
               description="if (ObjectUtil.isNotNull(Object)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -446,7 +446,7 @@
               description="JSONUtil.toJsonStr(var)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -485,7 +485,7 @@
               description="DateUtil.format(param, 'yyyy-MM-dd HH:mm:ss');"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -511,7 +511,7 @@
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -525,7 +525,7 @@
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -539,7 +539,7 @@
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -578,8 +578,11 @@
         </context>
     </template>
 
-    <template name="prif" value="private final " description="private final "
-              toReformat="true" toShortenFQNames="true">
+    <template name="prif"
+              value="private final "
+              description="private final "
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -589,7 +592,8 @@
     <!-- =============================================== Annotation =============================================== -->
 
 
-    <template name="slfj" value="@Slf4j" description="@Slf4j" toReformat="true" toShortenFQNames="true">
+    <template name="slfj" value="@Slf4j" description="@Slf4j"
+              toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
@@ -841,4 +845,58 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
+
+
+    <!-- sql, xml-->
+    <template name="iftest"
+              value="<if test=&quot;$VAR$ != null&quot;>&#10;&#10;</if>"
+              description="<if test=&quot;var != null&quot;></if>"
+              toReformat="true"
+              toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true"/>
+        </context>
+    </template>
+    <template name="ifteststr"
+              value="<if test=&quot;$VAR$ != null and $VAR$ != ''&quot;>&#10;&#10;</if>"
+              description="<if test=&quot;var != null and var != ''&quot;></if>"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="XML" value="true"/>
+        </context>
+    </template>
+    <template name="iftestcol"
+              value="<if test=&quot;$VAR$ != null and $VAR$.size() > 0&quot;>&#10;&#10;</if>"
+              description="<if test=&quot;var != null and var != ''&quot;></if>"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="XML" value="true"/>
+        </context>
+    </template>
+    <template name="foreach"
+              value="<foreach collection=&quot;$VAR$&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;>&#10;    #{item}&#10;</foreach>"
+              description="<foreach collection=&quot;VAR&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;>#{item}</foreach>"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="XML" value="true"/>
+        </context>
+    </template>
+    <template name="cd"
+              value="&lt;![CDATA[$VAR$]]&gt;"
+              description="&lt;![CDATA[]]&gt;"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="enum(&quot;<&quot;,&quot;>&quot;,&quot;<=&quot;,&quot;>=&quot;)"
+                  defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="XML" value="true"/>
+        </context>
+    </template>
+
 </templateSet>
