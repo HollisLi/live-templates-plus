@@ -44,7 +44,7 @@
     </template>
 
     <!-- String Is Equals -->
-    <template name="streq"
+    <template name="stre"
               value="StrUtil.equals($VAR$, $END$)"
               description="StrUtil.equals(s1, s2)"
               toReformat="true"
@@ -54,9 +54,31 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifstreq"
+    <template name="ifstre"
               value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.equals(s1, s2)) {}"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- String Is Not Equals -->
+    <template name="strne"
+              value="!StrUtil.equals($VAR$, $END$)"
+              description="!StrUtil.equals(s1, s2)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="ifstrne"
+              value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
+              description="if (!StrUtil.equals(s1, s2)) {}"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
