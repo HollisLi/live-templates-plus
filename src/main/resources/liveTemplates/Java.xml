@@ -847,14 +847,14 @@
     </template>
 
 
-    <!-- sql, MybatisSqlContext-->
+    <!-- sql, mybatis-sql-context-->
     <template name="iftest"
               value="&lt;if test=&quot;$VAR$ != null&quot;&gt;&#10;&#10;&lt;/if&gt;"
               description="&lt;if test=&quot;var != null&quot;&gt;&lt;/if&gt;"
               toReformat="true"
               toShortenFQNames="true">
         <context>
-            <option name="MybatisSqlContext" value="true"/>
+            <option name="mybatis-sql-context" value="true"/>
         </context>
     </template>
     <template name="ifteststr"
@@ -864,7 +864,7 @@
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="MybatisSqlContext" value="true"/>
+            <option name="mybatis-sql-context" value="true"/>
         </context>
     </template>
     <template name="iftestcol"
@@ -874,7 +874,7 @@
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="MybatisSqlContext" value="true"/>
+            <option name="mybatis-sql-context" value="true"/>
         </context>
     </template>
     <template name="foreach"
@@ -884,7 +884,7 @@
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="MybatisSqlContext" value="true"/>
+            <option name="mybatis-sql-context" value="true"/>
         </context>
     </template>
     <template name="cd"
@@ -895,7 +895,7 @@
         <variable name="VAR" expression="enum(&quot;&lt;&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&gt;=&quot;)"
                   defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="MybatisSqlContext" value="true"/>
+            <option name="mybatis-sql-context" value="true"/>
         </context>
     </template>
 
