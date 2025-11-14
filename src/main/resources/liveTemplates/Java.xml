@@ -849,8 +849,8 @@
 
     <!-- sql, xml-->
     <template name="iftest"
-              value="<if test=&quot;$VAR$ != null&quot;>&#10;&#10;</if>"
-              description="<if test=&quot;var != null&quot;></if>"
+              value="&lt;if test=&quot;$VAR$ != null&quot;&gt;&#10;&#10;&lt;/if&gt;"
+              description="&lt;if test=&quot;var != null&quot;&gt;&lt;/if&gt;"
               toReformat="true"
               toShortenFQNames="true">
         <context>
@@ -858,8 +858,8 @@
         </context>
     </template>
     <template name="ifteststr"
-              value="<if test=&quot;$VAR$ != null and $VAR$ != ''&quot;>&#10;&#10;</if>"
-              description="<if test=&quot;var != null and var != ''&quot;></if>"
+              value="&lt;if test=&quot;$VAR$ != null and $VAR$ != ''&quot;&gt;&#10;&#10;&lt;/if&gt;"
+              description="&lt;if test=&quot;var != null and var != ''&quot;&gt;&lt;/if&gt;"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
@@ -868,8 +868,8 @@
         </context>
     </template>
     <template name="iftestcol"
-              value="<if test=&quot;$VAR$ != null and $VAR$.size() > 0&quot;>&#10;&#10;</if>"
-              description="<if test=&quot;var != null and var != ''&quot;></if>"
+              value="&lt;if test=&quot;$VAR$ != null and $VAR$.size() > 0&quot;&gt;&#10;&#10;&lt;/if&gt;"
+              description="&lt;if test=&quot;var != null and var != ''&quot;&gt;&lt;/if&gt;"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
@@ -878,8 +878,8 @@
         </context>
     </template>
     <template name="foreach"
-              value="<foreach collection=&quot;$VAR$&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;>&#10;    #{item}&#10;</foreach>"
-              description="<foreach collection=&quot;VAR&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;>#{item}</foreach>"
+              value="<foreach collection=&quot;$VAR$&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;&#10;    #{item}&#10;</foreach>"
+              description="<foreach collection=&quot;VAR&quot; item=&quot;item&quot; open=&quot;(&quot; separator=&quot;,&quot; close=&quot;)&quot;&gt;#{item}</foreach>"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
@@ -892,7 +892,7 @@
               description="&lt;![CDATA[]]&gt;"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="enum(&quot;<&quot;,&quot;>&quot;,&quot;<=&quot;,&quot;>=&quot;)"
+        <variable name="VAR" expression="enum(&quot;<&quot;,&quot;&gt;&quot;,&quot;<=&quot;,&quot;&gt;=&quot;)"
                   defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="XML" value="true"/>
