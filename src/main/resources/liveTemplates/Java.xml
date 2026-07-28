@@ -1,5 +1,8 @@
 <templateSet group="Java">
-    <!-- String Is Blank -->
+
+    <!-- ============================================ String (StrUtil) ============================================ -->
+
+    <!-- StrUtil.isBlank -->
     <template name="strb"
               value="StrUtil.isBlank($VAR$)"
               description="StrUtil.isBlank(String)"
@@ -21,7 +24,7 @@
         </context>
     </template>
 
-    <!-- String Is Not Blank -->
+    <!-- StrUtil.isNotBlank -->
     <template name="strnb"
               value="StrUtil.isNotBlank($VAR$)"
               description="StrUtil.isNotBlank(String)"
@@ -43,7 +46,7 @@
         </context>
     </template>
 
-    <!-- String Is Equals -->
+    <!-- StrUtil.equals -->
     <template name="stre"
               value="StrUtil.equals($VAR1$, $VAR2$)$END$"
               description="StrUtil.equals(s1, s2)"
@@ -67,7 +70,7 @@
         </context>
     </template>
 
-    <!-- String Is Not Equals -->
+    <!-- !StrUtil.equals -->
     <template name="strne"
               value="!StrUtil.equals($VAR1$, $VAR2$)$END$"
               description="!StrUtil.equals(s1, s2)"
@@ -91,7 +94,7 @@
         </context>
     </template>
 
-    <!-- String Format -->
+    <!-- StrUtil.format -->
     <template name="strfmt"
               value="StrUtil.format($VAR1$, $VAR2$)$END$"
               description="StrUtil.format()"
@@ -104,7 +107,7 @@
         </context>
     </template>
 
-    <!-- String Contains -->
+    <!-- StrUtil.contains -->
     <template name="strc"
               value="StrUtil.contains($VAR1$, $VAR2$)$END$"
               description="StrUtil.contains(s1, s2)"
@@ -128,7 +131,7 @@
         </context>
     </template>
 
-    <!-- String Start With -->
+    <!-- StrUtil.startWith -->
     <template name="strsw"
               value="StrUtil.startWith($VAR1$, $VAR2$)$END$"
               description="StrUtil.startWith(str, prefix)"
@@ -152,7 +155,7 @@
         </context>
     </template>
 
-    <!-- String Trim -->
+    <!-- StrUtil.trim -->
     <template name="strtrim"
               value="StrUtil.trim($VAR$)$END$"
               description="StrUtil.trim(str)"
@@ -164,7 +167,7 @@
         </context>
     </template>
 
-    <!-- String Sub -->
+    <!-- StrUtil.sub -->
     <template name="strsub"
               value="StrUtil.sub($VAR1$, $VAR2$, $VAR3$)$END$"
               description="StrUtil.sub(str, from, to)"
@@ -178,7 +181,86 @@
         </context>
     </template>
 
-    <!-- Collection Is Empty -->
+
+    <!-- ============================================ Object (ObjectUtil) ============================================ -->
+
+    <!-- ObjectUtil.isNull -->
+    <template name="obn"
+              value="ObjectUtil.isNull($VAR$)"
+              description="ObjectUtil.isNull(Object)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="ifobn"
+              value="if (ObjectUtil.isNull($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ObjectUtil.isNull(Object)) {}"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- ObjectUtil.isNotNull -->
+    <template name="obnn"
+              value="ObjectUtil.isNotNull($VAR$)"
+              description="ObjectUtil.isNotNull(Object)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="ifobnn"
+              value="if (ObjectUtil.isNotNull($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ObjectUtil.isNotNull(Object)) {}"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- ObjectUtil.defaultIfNull -->
+    <template name="obndef"
+              value="ObjectUtil.defaultIfNull($VAR1$, $VAR2$)$END$"
+              description="ObjectUtil.defaultIfNull(obj, defaultVal)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+
+    <!-- ============================================ Bean (BeanUtil) ============================================ -->
+
+    <!-- BeanUtil.copyProperties -->
+    <template name="beancopy"
+              value="BeanUtil.copyProperties($VAR1$, $VAR2$.class)$END$"
+              description="BeanUtil.copyProperties(source, Target.class)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+
+    <!-- ============================================ Collection (CollectionUtil) ============================================ -->
+
+    <!-- CollectionUtil.isEmpty -->
     <template name="cole"
               value="CollectionUtil.isEmpty($VAR$)"
               description="CollectionUtil.isEmpty(Collection)"
@@ -200,7 +282,7 @@
         </context>
     </template>
 
-    <!-- Collection Is Not Empty -->
+    <!-- CollectionUtil.isNotEmpty -->
     <template name="colne"
               value="CollectionUtil.isNotEmpty($VAR$)"
               description="CollectionUtil.isNotEmpty(Collection)"
@@ -222,7 +304,9 @@
         </context>
     </template>
 
-    <!-- List Init -->
+
+    <!-- ============================================ List ============================================ -->
+
     <template name="listnew"
               value="List&lt;$VAR1$&gt; $VAR2$ = new ArrayList&lt;&gt;();$END$"
               description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
@@ -254,10 +338,12 @@
         </context>
     </template>
 
-    <!-- Set Init -->
+
+    <!-- ============================================ Set ============================================ -->
+
     <template name="setnew"
               value="Set&lt;$VAR1$&gt; $VAR2$ = new LinkedHashSet&lt;&gt;();"
-              description="Set&lt;?&gt; list = new LinkedHashSet&lt;&gt;()"
+              description="Set&lt;?&gt; set = new LinkedHashSet&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
@@ -286,65 +372,10 @@
         </context>
     </template>
 
-    <!-- Array Is Empty -->
-    <template name="arre"
-              value="ArrayUtil.isEmpty($VAR$)"
-              description="ArrayUtil.isEmpty(Object[])"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="ifarre"
-              value="if (ArrayUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ArrayUtil.isEmpty(Object[])) {}"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
 
-    <!-- Array Is Not Empty -->
-    <template name="arrne"
-              value="ArrayUtil.isNotEmpty($VAR$)"
-              description="ArrayUtil.isNotEmpty(Object[])"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <template name="ifarrne"
-              value="if (ArrayUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ArrayUtil.isNotEmpty(Object[])) {}"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
+    <!-- ============================================ Map (MapUtil) ============================================ -->
 
-    <!-- Array Init -->
-    <template name="arrnew"
-              value="$VAR1$[] $VAR2$ = new $VAR1$[]{$VAR3$};"
-              description="Object[] array = new Object[]{var1, var2, var3}"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR3" expression="complete()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- Map Is Empty -->
+    <!-- MapUtil.isEmpty -->
     <template name="mape"
               value="MapUtil.isEmpty($VAR$)"
               description="MapUtil.isEmpty(Map)"
@@ -366,7 +397,7 @@
         </context>
     </template>
 
-    <!-- Map Is Not Empty -->
+    <!-- MapUtil.isNotEmpty -->
     <template name="mapne"
               value="MapUtil.isNotEmpty($VAR$)"
               description="MapUtil.isNotEmpty(Map)"
@@ -423,77 +454,70 @@
     </template>
 
 
-    <!-- Object Is Null -->
-    <template name="obn"
-              value="ObjectUtil.isNull($VAR$)"
-              description="ObjectUtil.isNull(Object)"
+    <!-- ============================================ Array (ArrayUtil) ============================================ -->
+
+    <!-- ArrayUtil.isEmpty -->
+    <template name="arre"
+              value="ArrayUtil.isEmpty($VAR$)"
+              description="ArrayUtil.isEmpty(Object[])"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifobn"
-              value="if (ObjectUtil.isNull($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ObjectUtil.isNull(Object)) {}"
+    <template name="ifarre"
+              value="if (ArrayUtil.isEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ArrayUtil.isEmpty(Object[])) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
-    <!-- Object Is Not Null -->
-    <template name="obnn"
-              value="ObjectUtil.isNotNull($VAR$)"
-              description="ObjectUtil.isNotNull(Object)"
+    <!-- ArrayUtil.isNotEmpty -->
+    <template name="arrne"
+              value="ArrayUtil.isNotEmpty($VAR$)"
+              description="ArrayUtil.isNotEmpty(Object[])"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="ifobnn"
-              value="if (ObjectUtil.isNotNull($VAR$)) {&#10;    $END$&#10;}"
-              description="if (ObjectUtil.isNotNull(Object)) {}"
+    <template name="ifarrne"
+              value="if (ArrayUtil.isNotEmpty($VAR$)) {&#10;    $END$&#10;}"
+              description="if (ArrayUtil.isNotEmpty(Object[])) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- Object Default If Null -->
-    <template name="obndef"
-              value="ObjectUtil.defaultIfNull($VAR1$, $VAR2$)$END$"
-              description="ObjectUtil.defaultIfNull(obj, defaultVal)"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="arrayVariable()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
-    <!-- Bean Copy Properties -->
-    <template name="beancopy"
-              value="BeanUtil.copyProperties($VAR1$, $VAR2$.class)$END$"
-              description="BeanUtil.copyProperties(source, Target.class)"
+    <!-- Array Init -->
+    <template name="arrnew"
+              value="$VAR1$[] $VAR2$ = new $VAR1$[]{$VAR3$};"
+              description="Object[] array = new Object[]{var1, var2, var3}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR3" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
 
-    <!-- File Exist -->
+
+    <!-- ============================================ File (FileUtil) ============================================ -->
+
+    <!-- FileUtil.exist -->
     <template name="fileex"
               value="FileUtil.exist($VAR$)"
               description="FileUtil.exist(File||String)"
@@ -515,7 +539,7 @@
         </context>
     </template>
 
-    <!-- File Not Exist -->
+    <!-- !FileUtil.exist -->
     <template name="filenex"
               value="!FileUtil.exist($VAR$)"
               description="!FileUtil.exist(File||String)"
@@ -537,51 +561,9 @@
         </context>
     </template>
 
-    <!-- BigDecimal Zero-->
-    <template name="zero"
-              value="BigDecimal.ZERO"
-              description="BigDecimal.ZERO"
-              toReformat="true"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-    <!-- BigDecimal Zero-->
-    <template name="bdz"
-              value="BigDecimal.ZERO"
-              description="BigDecimal.ZERO"
-              toReformat="true"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
 
-    <!-- RoundingMode.HALF_UP -->
-    <template name="up"
-              value="RoundingMode.HALF_UP"
-              description="RoundingMode.HALF_UP"
-              toReformat="true"
-              toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
+    <!-- ============================================ Date ============================================ -->
 
-    <!-- Parse JsonStr -->
-    <template name="tojson"
-              value="JSONUtil.toJsonStr($VAR$)"
-              description="JSONUtil.toJsonStr(var)"
-              toReformat="true"
-              toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-    <!-- new Date -->
     <template name="now"
               value="Date now = new Date();"
               description="Date now = new Date();"
@@ -609,6 +591,8 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
+
+    <!-- DateUtil.format -->
     <template name="datefmt"
               value="DateUtil.format($VAR$, DatePattern.NORM_DATETIME_PATTERN);"
               description="DateUtil.format(param, 'yyyy-MM-dd HH:mm:ss');"
@@ -620,7 +604,9 @@
         </context>
     </template>
 
-    <!-- UUID -->
+
+    <!-- ============================================ ID (IdUtil) ============================================ -->
+
     <template name="uuid"
               value="IdUtil.fastSimpleUUID()"
               description="IdUtil.fastSimpleUUID()"
@@ -631,7 +617,55 @@
         </context>
     </template>
 
-    <!-- Log Init -->
+
+    <!-- ============================================ JSON (JSONUtil) ============================================ -->
+
+    <template name="tojson"
+              value="JSONUtil.toJsonStr($VAR$)"
+              description="JSONUtil.toJsonStr(var)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+
+    <!-- ============================================ BigDecimal / Math ============================================ -->
+
+    <template name="zero"
+              value="BigDecimal.ZERO"
+              description="BigDecimal.ZERO"
+              toReformat="true"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="bdz"
+              value="BigDecimal.ZERO"
+              description="BigDecimal.ZERO"
+              toReformat="true"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="up"
+              value="RoundingMode.HALF_UP"
+              description="RoundingMode.HALF_UP"
+              toReformat="true"
+              toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+
+    <!-- ============================================ Log ============================================ -->
+
+    <!-- Logger Init -->
     <template name="loginit"
               value="private static final Logger log = LoggerFactory.getLogger($VAR$.class);"
               description="LoggerFactory.getLogger(Class)"
@@ -643,7 +677,7 @@
         </context>
     </template>
 
-    <!-- Log Info -->
+    <!-- log.info -->
     <template name="logi"
               value="log.info(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] param: {}&quot;, $VAR$);"
               description="log.info(&quot;[ClassName]-[FunctionName] param: {}&quot;, var)"
@@ -657,7 +691,7 @@
         </context>
     </template>
 
-    <!-- Log Warn -->
+    <!-- log.warn -->
     <template name="logw"
               value="log.warn(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] param: {}&quot;, $VAR$);"
               description="log.warn(&quot;[ClassName]-[FunctionName] param: {}&quot;, var)"
@@ -671,7 +705,7 @@
         </context>
     </template>
 
-    <!-- Log Error -->
+    <!-- log.error -->
     <template name="loge"
               value="log.error(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] Error, param: {}, errorMessage: {}&quot;, $VAR$, $EX$.getMessage(), $EX$);"
               description="log.error(&quot;[ClassName]-[FunctionName] Error, param: {}, errorMessage: {}&quot;, var, e.getMessage(), e);"
@@ -686,7 +720,9 @@
         </context>
     </template>
 
-    <!-- Throw RuntimeException -->
+
+    <!-- ============================================ Exception ============================================ -->
+
     <template name="thrr"
               value="throw new RuntimeException(&quot;$END$&quot;);"
               description="throw new RuntimeException(&quot;&quot;)"
@@ -696,8 +732,6 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-
-    <!-- Throw BusinessException -->
     <template name="thrb"
               value="throw new BusinessException(&quot;$END$&quot;);"
               description="throw new BusinessException(&quot;&quot;)"
@@ -708,17 +742,18 @@
         </context>
     </template>
 
-    <!-- Generate description -->
+
+    <!-- ============================================ Code Style ============================================ -->
+
     <template name="zs"
               value="/**&#10; * $END$&#10; */"
-              description=""
+              description="JavaDoc comment"
               toReformat="true"
               toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-
     <template name="prif"
               value="private final "
               description="private final "
@@ -730,9 +765,9 @@
     </template>
 
 
-    <!-- =============================================== Annotation =============================================== -->
+    <!-- ============================================ Annotations ============================================ -->
 
-
+    <!-- Log -->
     <template name="slfj" value="@Slf4j" description="@Slf4j"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -746,7 +781,7 @@
         </context>
     </template>
 
-
+    <!-- Spring Stereotype -->
     <template name="restc" value="@RestController" description="@RestController"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -772,7 +807,7 @@
         </context>
     </template>
 
-
+    <!-- Dependency Injection -->
     <template name="auto" value="@Autowired" description="@Autowired"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -786,7 +821,7 @@
         </context>
     </template>
 
-
+    <!-- Spring Web -->
     <template name="reqm" value="@RequestMapping(&quot;/$END$&quot;)" description="@RequestMapping(&quot;/&quot;)"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -817,8 +852,6 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-
-
     <template name="reqp" value="@RequestParam" description="@RequestParam"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -832,7 +865,7 @@
         </context>
     </template>
 
-
+    <!-- Lombok -->
     <template name="allarg" value="@AllArgsConstructor" description="@AllArgsConstructor"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -851,8 +884,6 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-
-
     <template name="data" value="@Data" description="@Data"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -884,47 +915,7 @@
         </context>
     </template>
 
-
-    <template name="enumv" value="@EnumValue" description="@EnumValue"
-              toReformat="true" toShortenFQNames="true">
-        <context>
-            <option name="JAVA_DECLARATION" value="true"/>
-        </context>
-    </template>
-    <template name="clean" value="@Cleanup " description="@Cleanup "
-              toReformat="true" toShortenFQNames="true">
-        <context>
-            <option name="JAVA_CODE" value="true"/>
-        </context>
-    </template>
-
-
-    <template name="jsonfmt"
-              value="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
-              description="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
-              toReformat="true" toShortenFQNames="true">
-        <context>
-            <option name="JAVA_DECLARATION" value="true"/>
-        </context>
-    </template>
-    <template name="datetimefmt"
-              value="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
-              description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
-              toReformat="true" toShortenFQNames="true">
-        <context>
-            <option name="JAVA_DECLARATION" value="true"/>
-        </context>
-    </template>
-    <template name="datetimefmtiso"
-              value="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
-              description="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
-              toReformat="true" toShortenFQNames="true">
-        <context>
-            <option name="JAVA_DECLARATION" value="true"/>
-        </context>
-    </template>
-
-
+    <!-- Validation -->
     <template name="validd" value="@Validated" description="@Validated"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -961,6 +952,46 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
+
+    <!-- JSON / Date Format -->
+    <template name="jsonfmt"
+              value="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
+              description="@JsonFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;, timezone = &quot;GMT+8&quot;)"
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+    <template name="datetimefmt"
+              value="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
+              description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+    <template name="datetimefmtiso"
+              value="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
+              description="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+
+    <!-- Other Annotations -->
+    <template name="enumv" value="@EnumValue" description="@EnumValue"
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_DECLARATION" value="true"/>
+        </context>
+    </template>
+    <template name="clean" value="@Cleanup " description="@Cleanup "
+              toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
     <template name="param" value="@Param(&quot;$END$&quot;)" description="@Param(&quot;&quot;)"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -973,7 +1004,6 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-
     <template name="runwith" value="@RunWith(SpringRunner.class)" description="@RunWith(SpringRunner.class)"
               toReformat="true" toShortenFQNames="true">
         <context>
@@ -994,7 +1024,8 @@
     </template>
 
 
-    <!-- sql, mybatis-sql-context-->
+    <!-- ============================================ MyBatis SQL ============================================ -->
+
     <template name="iftest"
               value="&lt;if test=&quot;$VAR$ != null&quot;&gt;&#10;&#10;&lt;/if&gt;"
               description="&lt;if test=&quot;var != null&quot;&gt;&lt;/if&gt;"
@@ -1017,7 +1048,7 @@
     </template>
     <template name="iftestcol"
               value="&lt;if test=&quot;$VAR$ != null and $VAR$.size() > 0&quot;&gt;&#10;&#10;&lt;/if&gt;"
-              description="&lt;if test=&quot;var != null and var != ''&quot;&gt;&lt;/if&gt;"
+              description="&lt;if test=&quot;var != null and var.size() > 0&quot;&gt;&lt;/if&gt;"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
