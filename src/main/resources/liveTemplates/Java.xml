@@ -539,7 +539,7 @@
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -553,7 +553,7 @@
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -567,7 +567,7 @@
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
