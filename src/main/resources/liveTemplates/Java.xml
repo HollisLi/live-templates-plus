@@ -796,7 +796,7 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-    <template name="datefmt"
+    <template name="datetimefmt"
               value="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               description="@DateTimeFormat(pattern = &quot;yyyy-MM-dd HH:mm:ss&quot;)"
               toReformat="true" toShortenFQNames="true">
@@ -804,7 +804,7 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-    <template name="datefmtiso"
+    <template name="datetimefmtiso"
               value="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
               description="@DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)"
               toReformat="true" toShortenFQNames="true">
