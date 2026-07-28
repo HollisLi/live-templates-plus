@@ -45,21 +45,23 @@
 
     <!-- String Is Equals -->
     <template name="stre"
-              value="StrUtil.equals($VAR$, $END$)"
+              value="StrUtil.equals($VAR1$, $VAR2$)$END$"
               description="StrUtil.equals(s1, s2)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifstre"
-              value="if (StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
+              value="if (StrUtil.equals($VAR1$, $VAR2$)) {&#10;    $END$&#10;}"
               description="if (StrUtil.equals(s1, s2)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -67,21 +69,23 @@
 
     <!-- String Is Not Equals -->
     <template name="strne"
-              value="!StrUtil.equals($VAR$, $END$)"
+              value="!StrUtil.equals($VAR1$, $VAR2$)$END$"
               description="!StrUtil.equals(s1, s2)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
     <template name="ifstrne"
-              value="if (!StrUtil.equals($VAR$, $END$)) {&#10;    $END$&#10;}"
+              value="if (!StrUtil.equals($VAR1$, $VAR2$)) {&#10;    $END$&#10;}"
               description="if (!StrUtil.equals(s1, s2)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -89,11 +93,12 @@
 
     <!-- String Format -->
     <template name="strfmt"
-              value="StrUtil.format($VAR$, $END$)"
+              value="StrUtil.format($VAR1$, $VAR2$)$END$"
               description="StrUtil.format()"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -331,11 +336,12 @@
         </context>
     </template>
     <template name="mapsin"
-              value="Collections.singletonMap($END$, $VAR$);"
+              value="Collections.singletonMap($VAR1$, $VAR2$)$END$"
               description="Collections.singletonMap(K, V);"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -387,7 +393,7 @@
     </template>
 
     <!-- File Exist -->
-    <template name="filee"
+    <template name="fileex"
               value="FileUtil.exist($VAR$)"
               description="FileUtil.exist(File||String)"
               toReformat="true"
@@ -397,7 +403,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iffilee"
+    <template name="iffileex"
               value="if (FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (FileUtil.exist(File||String)) {}"
               toReformat="true"
@@ -409,7 +415,7 @@
     </template>
 
     <!-- File Not Exist -->
-    <template name="filene"
+    <template name="filenex"
               value="!FileUtil.exist($VAR$)"
               description="!FileUtil.exist(File||String)"
               toReformat="true"
@@ -419,7 +425,7 @@
             <option name="JAVA_CODE" value="true"/>
         </context>
     </template>
-    <template name="iffilene"
+    <template name="iffilenex"
               value="if (!FileUtil.exist($VAR$)) {&#10;    $END$&#10;}"
               description="if (!FileUtil.exist(File||String)) {}"
               toReformat="true"
@@ -441,7 +447,7 @@
         </context>
     </template>
     <!-- BigDecimal Zero-->
-    <template name="bz"
+    <template name="bdz"
               value="BigDecimal.ZERO"
               description="BigDecimal.ZERO"
               toReformat="true"
