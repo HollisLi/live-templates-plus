@@ -150,11 +150,12 @@
 
     <!-- List Init -->
     <template name="listnew"
-              value="List&lt;$VAR1$&gt; $END$ = new ArrayList&lt;&gt;();"
+              value="List&lt;$VAR1$&gt; $VAR2$ = new ArrayList&lt;&gt;();$END$"
               description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -261,9 +262,9 @@
               description="Object[] array = new Object[]{var1, var2, var3}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR3" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -320,7 +321,7 @@
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="className()" defaultValue="String" alwaysStopAt="true"/>
-        <variable name="VAR1" expression="className()" defaultValue="String" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="className()" defaultValue="String" alwaysStopAt="true"/>
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -398,7 +399,7 @@
               description="FileUtil.exist(File||String)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -408,7 +409,7 @@
               description="if (FileUtil.exist(File||String)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -420,7 +421,7 @@
               description="!FileUtil.exist(File||String)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -430,7 +431,7 @@
               description="if (!FileUtil.exist(File||String)) {}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -561,13 +562,14 @@
 
     <!-- Log Error -->
     <template name="loge"
-              value="log.error(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] Error, param: {}, errorMessage: {}&quot;, $VAR$, e.getMessage(), e);"
+              value="log.error(&quot;[$FILE_NAME$]-[$FUNCTION_NAME$] Error, param: {}, errorMessage: {}&quot;, $VAR$, $EX$.getMessage(), $EX$);"
               description="log.error(&quot;[ClassName]-[FunctionName] Error, param: {}, errorMessage: {}&quot;, var, e.getMessage(), e);"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="FILE_NAME" expression="className()" defaultValue="" alwaysStopAt="true"/>
         <variable name="FUNCTION_NAME" expression="methodName()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="EX" expression="complete()" defaultValue="e" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -887,6 +889,7 @@
               description="&lt;if test=&quot;var != null&quot;&gt;&lt;/if&gt;"
               toReformat="true"
               toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="mybatis-sql-context" value="true"/>
         </context>
