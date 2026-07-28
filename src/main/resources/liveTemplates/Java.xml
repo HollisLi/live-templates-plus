@@ -249,13 +249,13 @@
 
     <!-- BeanUtil.copyProperties -->
     <template name="beancopy"
-              value="$VAR2$ $VAR3$ = BeanUtil.copyProperties($VAR1$, $VAR2$.class);$END$"
+              value="$VAR1$ $RET$ = BeanUtil.copyProperties($VAR2$, $VAR1$.class);$END$"
               description="BeanUtil.copyProperties(source, Target.class)"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="complete()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR3" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -312,12 +312,12 @@
     <!-- ============================================ List ============================================ -->
 
     <template name="listnew"
-              value="List&lt;$VAR1$&gt; $VAR2$ = new ArrayList&lt;&gt;();$END$"
+              value="List&lt;$VAR1$&gt; $RET$ = new ArrayList&lt;&gt;();$END$"
               description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="complete()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -346,12 +346,12 @@
     <!-- ============================================ Set ============================================ -->
 
     <template name="setnew"
-              value="Set&lt;$VAR1$&gt; $VAR2$ = new LinkedHashSet&lt;&gt;();"
+              value="Set&lt;$VAR1$&gt; $RET$ = new LinkedHashSet&lt;&gt;();"
               description="Set&lt;?&gt; set = new LinkedHashSet&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="complete()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -425,13 +425,13 @@
 
     <!-- Map Init -->
     <template name="mapnew"
-              value="Map&lt;$VAR1$, $VAR2$&gt; $VAR3$ = new HashMap&lt;&gt;();"
+              value="Map&lt;$VAR1$, $VAR2$&gt; $RET$ = new HashMap&lt;&gt;();"
               description="Map&lt;?, ?&gt; hashMap = new HashMap&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="complete()" defaultValue="String" alwaysStopAt="true"/>
         <variable name="VAR2" expression="complete()" defaultValue="String" alwaysStopAt="true"/>
-        <variable name="VAR3" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
