@@ -2,7 +2,7 @@
 
 # live-templates-plus-hutool Changelog
 
-## [Released]
+## [Unreleased]
 
 ### Added
 

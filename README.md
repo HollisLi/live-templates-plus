@@ -1,7 +1,9 @@
 # live-templates-plus
 
+<!-- Plugin description -->
 > An enhanced version of Idea live templates, with more popular templates, and support for the Hutool toolkits.<br/>
   Idea live templates 的增强版, 加入了更多常用的模板, 以及对 Hutool 工具包的支持.
+<!-- Plugin description end -->
 
 ## Live Templates Plus(Hutool)
 
