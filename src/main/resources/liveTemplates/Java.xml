@@ -104,6 +104,80 @@
         </context>
     </template>
 
+    <!-- String Contains -->
+    <template name="strc"
+              value="StrUtil.contains($VAR1$, $VAR2$)$END$"
+              description="StrUtil.contains(s1, s2)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="ifstrc"
+              value="if (StrUtil.contains($VAR1$, $VAR2$)) {&#10;    $END$&#10;}"
+              description="if (StrUtil.contains(s1, s2)) {}"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- String Start With -->
+    <template name="strsw"
+              value="StrUtil.startWith($VAR1$, $VAR2$)$END$"
+              description="StrUtil.startWith(str, prefix)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+    <template name="ifstrsw"
+              value="if (StrUtil.startWith($VAR1$, $VAR2$)) {&#10;    $END$&#10;}"
+              description="if (StrUtil.startWith(str, prefix)) {}"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- String Trim -->
+    <template name="strtrim"
+              value="StrUtil.trim($VAR$)$END$"
+              description="StrUtil.trim(str)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- String Sub -->
+    <template name="strsub"
+              value="StrUtil.sub($VAR1$, $VAR2$, $VAR3$)$END$"
+              description="StrUtil.sub(str, from, to)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
     <!-- Collection Is Empty -->
     <template name="cole"
               value="CollectionUtil.isEmpty($VAR$)"
@@ -393,6 +467,32 @@
         </context>
     </template>
 
+    <!-- Object Default If Null -->
+    <template name="obndef"
+              value="ObjectUtil.defaultIfNull($VAR1$, $VAR2$)$END$"
+              description="ObjectUtil.defaultIfNull(obj, defaultVal)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- Bean Copy Properties -->
+    <template name="beancopy"
+              value="BeanUtil.copyProperties($VAR1$, $VAR2$.class)$END$"
+              description="BeanUtil.copyProperties(source, Target.class)"
+              toReformat="true"
+              toShortenFQNames="true">
+        <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
     <!-- File Exist -->
     <template name="fileex"
               value="FileUtil.exist($VAR$)"
@@ -515,6 +615,17 @@
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="JAVA_CODE" value="true"/>
+        </context>
+    </template>
+
+    <!-- UUID -->
+    <template name="uuid"
+              value="IdUtil.fastSimpleUUID()"
+              description="IdUtil.fastSimpleUUID()"
+              toReformat="true"
+              toShortenFQNames="true">
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
