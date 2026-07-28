@@ -254,7 +254,7 @@
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR3" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -316,8 +316,8 @@
               description="List&lt;?&gt; list = new ArrayList&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -350,8 +350,8 @@
               description="Set&lt;?&gt; set = new LinkedHashSet&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -429,9 +429,9 @@
               description="Map&lt;?, ?&gt; hashMap = new HashMap&lt;&gt;()"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="className()" defaultValue="String" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="className()" defaultValue="String" alwaysStopAt="true"/>
-        <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="complete()" defaultValue="String" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="complete()" defaultValue="String" alwaysStopAt="true"/>
+        <variable name="VAR3" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -510,8 +510,8 @@
               description="Object[] array = new Object[]{var1, var2, var3}"
               toReformat="true"
               toShortenFQNames="true">
-        <variable name="VAR1" expression="className()" defaultValue="" alwaysStopAt="true"/>
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR1" expression="complete()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR3" expression="complete()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -1002,7 +1002,8 @@
             <option name="JAVA_DECLARATION" value="true"/>
         </context>
     </template>
-    <template name="trans" value="@Transactional(rollbackFor = Exception.class)" description="@Transactional(rollbackFor = Exception.class)"
+    <template name="trans" value="@Transactional(rollbackFor = Exception.class)"
+              description="@Transactional(rollbackFor = Exception.class)"
               toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_DECLARATION" value="true"/>
