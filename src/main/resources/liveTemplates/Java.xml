@@ -96,10 +96,11 @@
 
     <!-- StrUtil.format -->
     <template name="strfmt"
-              value="StrUtil.format($VAR1$, $VAR2$)$END$"
-              description="StrUtil.format()"
+              value="String $RET$ = StrUtil.format($VAR1$, $VAR2$);$END$"
+              description="String result = StrUtil.format()"
               toReformat="true"
               toShortenFQNames="true">
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
@@ -157,10 +158,11 @@
 
     <!-- StrUtil.trim -->
     <template name="strtrim"
-              value="StrUtil.trim($VAR$)$END$"
-              description="StrUtil.trim(str)"
+              value="String $RET$ = StrUtil.trim($VAR$);$END$"
+              description="String result = StrUtil.trim(str)"
               toReformat="true"
               toShortenFQNames="true">
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
@@ -169,10 +171,11 @@
 
     <!-- StrUtil.sub -->
     <template name="strsub"
-              value="StrUtil.sub($VAR1$, $VAR2$, $VAR3$)$END$"
-              description="StrUtil.sub(str, from, to)"
+              value="String $RET$ = StrUtil.sub($VAR1$, $VAR2$, $VAR3$);$END$"
+              description="String result = StrUtil.sub(str, from, to)"
               toReformat="true"
               toShortenFQNames="true">
+        <variable name="RET" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true"/>
@@ -246,12 +249,13 @@
 
     <!-- BeanUtil.copyProperties -->
     <template name="beancopy"
-              value="BeanUtil.copyProperties($VAR1$, $VAR2$.class)$END$"
+              value="$VAR2$ $VAR3$ = BeanUtil.copyProperties($VAR1$, $VAR2$.class);$END$"
               description="BeanUtil.copyProperties(source, Target.class)"
               toReformat="true"
               toShortenFQNames="true">
         <variable name="VAR1" expression="completeSmart()" defaultValue="" alwaysStopAt="true"/>
         <variable name="VAR2" expression="className()" defaultValue="" alwaysStopAt="true"/>
+        <variable name="VAR3" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true"/>
         <context>
             <option name="JAVA_CODE" value="true"/>
         </context>
@@ -608,8 +612,8 @@
     <!-- ============================================ ID (IdUtil) ============================================ -->
 
     <template name="uuid"
-              value="IdUtil.fastSimpleUUID()"
-              description="IdUtil.fastSimpleUUID()"
+              value="String uuid = IdUtil.fastSimpleUUID();"
+              description="String uuid = IdUtil.fastSimpleUUID();"
               toReformat="true"
               toShortenFQNames="true">
         <context>
